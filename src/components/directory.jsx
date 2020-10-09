@@ -37,15 +37,16 @@ class Directory extends Component {
                 size: 'large',
                 id: 5,
                 linkUrl: 'shop/mens'
-            }]
+            }
+        ]
         }
     }
 
     render() {
         return (
             <div className='directory-menu'>
-                {this.state.section.map(({ title, imageUrl, id }) => (
-                    <MenuItem key={id} title={title} imageUrl={imageUrl} />
+                {this.state.section.map(({ id, ...otherSectionProps }) => (
+                    <MenuItem key={id} {...otherSectionProps}/>
 
                 ))}
             </div>
