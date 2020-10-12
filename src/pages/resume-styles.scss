@@ -1,0 +1,110 @@
+// a:link, a:visited {
+//     // background-color: #5344c7;
+//     color: rgb(0, 0, 0);
+//     padding: 14px 25px;
+//     text-align: center;
+//     text-decoration: none;
+//     display: inline-block;
+//   }
+  
+//   a:hover, a:active {
+//     background-color: rgb(54, 54, 153);
+//     color: white;
+//   }
+
+.column {
+    column-count: 3;
+    margin-top: auto;
+    clear: both;
+    align-self: start;
+}
+
+.sidebar {
+    float: right;
+    position: sticky;
+    align-items: center;
+    align-self: start;
+}
+
+p {
+    padding-left: 10px;
+}
+
+.blockquote {
+    background: #f9f9f9;
+    border-left: 5px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+
+
+blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+blockquote p {
+    display: inline;
+}
+
+.avatar {
+    // border: 1px solid #ddd;
+    border-radius: 50%;
+    padding: 5px;
+    width: 150px;
+}
+
+.centerimage {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5px;
+    height: auto;
+    width: 600px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-gap: 16px;
+}
+
+.container {
+    width: 80%;
+    padding: 5px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    // padding-top: 10px;
+    background-color: white;
+}
+
+#top,
+#bottom,
+#left,
+#right {
+    background: rgb(45, 146, 172);
+    position: fixed;
+}
+#left,
+#right {
+    top: 0;
+    bottom: 0;
+    width: 15px;
+}
+#left {
+    left: 0;
+}
+#right {
+    right: 0;
+}
+
+#top,
+#top {
+    top: 0;
+}
