@@ -6,8 +6,7 @@ import { MDBCard } from 'mdbreact';
 import BackButton from '../components/backbutton';
 
 const HomePage = () => (
-    <MDBCard style={{paddingBottom: '100px'}}>
-
+    <MDBCard style={{paddingTop: '5px', paddingBottom: '200px'}}>
 
      
 
