@@ -39,6 +39,10 @@
   body {
     z-index: 1
   }
+
+  img{
+    opacity: 0.4;
+  }
   
   #apppage h6 {
     line-height: 1.7;

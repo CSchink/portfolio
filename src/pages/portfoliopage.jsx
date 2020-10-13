@@ -3,6 +3,7 @@ import { Fieldset } from 'primereact/fieldset';
 import './resume-styles.scss'
 import 'primereact/resources/themes/saga-blue/theme.css';
 import SyntaxComponent from '../components/syntax';
+import ContactList from '../components/contactlist';
 import Fade from 'react-reveal/Fade';
 import { BreadcrumbsItem } from 'react-breadcrumbs-dynamic';
 import '../styles/navigation.css'
@@ -10,10 +11,10 @@ import { MDBCard } from 'mdbreact';
 import Header from '../components/header';
 import BackButton from '../components/backbutton';
 
-const Resume = () => (
+const PortfolioPage = () => (
     <MDBCard>
         
-        <Header section="section1" title='History Lab' intro='A comprehensive database for students of science and history' />
+        <Header section="section1" title='Portfolio' intro='A comprehensive database for students of science and history' />
 
         <div id="section1">
 
@@ -21,7 +22,7 @@ const Resume = () => (
                 Projects
         </BreadcrumbsItem>
             <BreadcrumbsItem glyph='resume' to={'/projects/resume'} eventKey={2.2} compare={(a, b) => a.weight - b.weight}>
-                History Lab
+                Portfolio
         </BreadcrumbsItem>
 
 
@@ -29,7 +30,7 @@ const Resume = () => (
                 <h1 className='heading' style={{
                     paddingTop: '60px',
                     textAlign: 'center'
-                }}> History Lab </h1>
+                }}> My Portfolio </h1>
                 <br></br>
 
                 <Fade right>
@@ -112,4 +113,4 @@ const Resume = () => (
     </MDBCard>
 )
 
-export default Resume;
+export default PortfolioPage;
