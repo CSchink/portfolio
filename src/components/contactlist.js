@@ -1,5 +1,4 @@
 import React from 'react';
-import { Button } from 'primereact/button';
 import { MDBIcon, MDBNavItem } from 'mdbreact';
 import '../pages/resume-styles.scss'
 
