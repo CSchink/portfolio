@@ -39,7 +39,7 @@ class Header extends React.Component {
       <div id='apppage'>
         
             
-        <MDBView>
+        <MDBView >
           <MDBMask className='white-text gradient' />
           <MDBContainer
             style={{ height: '100%', width: '100%', paddingTop: '10rem' }}
@@ -56,13 +56,13 @@ class Header extends React.Component {
                    {this.props.intro}
                   </h6>
                  
-                      <MDBNavLink to='/home'>
+                   
                         <MDBSmoothScroll to={this.props.section}>
                   <MDBBtn outline color='white'>
                    Read On
                   </MDBBtn>
                   </MDBSmoothScroll>
-                  </MDBNavLink>
+              
        
                 </MDBAnimation>
               </MDBCol>

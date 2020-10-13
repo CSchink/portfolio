@@ -23,9 +23,9 @@ class Navigation extends Component {
         return (
 
             <MDBNavbar color="elegant-color-dark" dark expand="md" style={{ color: 'white !important' }}>
-                {/* <MDBNavbarBrand>
-            
-                    </MDBNavbarBrand> */}
+                <MDBNavbarBrand>
+            Corey Schink
+                    </MDBNavbarBrand>
                 <MDBNavbarToggler onClick={this.toggleCollapse} />
                 <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
                     <MDBNavbarNav left>
