@@ -9,9 +9,9 @@ import BackButton from '../components/backbutton';
 const ProjectsPage = () => (
     <MDBCard style={{paddingBottom: '100px'}}>
      
-        <BreadcrumbsItem glyph='user' to={'/home'} eventKey={1}>
+        {/* <BreadcrumbsItem glyph='user' to={'/home'} eventKey={1}>
             Home
-    </BreadcrumbsItem>
+    </BreadcrumbsItem> */}
         <BreadcrumbsItem glyph='user' to={'/projects'} eventKey={1.1}>
             Projects
     </BreadcrumbsItem>

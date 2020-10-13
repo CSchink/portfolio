@@ -17,11 +17,11 @@ function App() {
   return (
     <div>
       <Navigation/>
-      <div style={{paddingLeft: '10px'}}>
+      <div style={{position: 'sticky', zIndex: '1', textAlign: 'right'}}>
       <Breadcrumbs
         separator={<b> / </b>}
 
-        container={MDBNav}
+        // container={MDBNav}
         finalProps={{ active: true }}
         duplicateProps={{ to: 'href' }}
       />
