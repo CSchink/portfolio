@@ -11,11 +11,13 @@ import { Breadcrumbs, BreadcrumbsItem } from 'react-breadcrumbs-dynamic';
 // import { base_path } from './constants'
 import FilterPost from './pages/filterpost';
 import { MDBNav } from 'mdbreact';
+import Navigation from './components/navigation';
 
 function App() {
   return (
     <div>
-      <div style={{paddingTop: '20px', paddingLeft: '10px'}}>
+      <Navigation/>
+      <div style={{paddingLeft: '10px'}}>
       <Breadcrumbs
         separator={<b> / </b>}
 
@@ -24,14 +26,14 @@ function App() {
         duplicateProps={{ to: 'href' }}
       />
  </div>
- <BreadcrumbsItem to={'/home'} eventKey={1} compare={(a,b)=>a.weight-b.weight} >
+ <BreadcrumbsItem to={'/'} eventKey={1} compare={(a,b)=>a.weight-b.weight} >
         Home
         </BreadcrumbsItem>
   
        
        
       <Switch>
-        <Route exact path='/' component={Header} />
+        <Route exact path='/' component={HomePage} />
         <Route path='/home' component={HomePage} />
         <Route exact path='/projects/resume' component={Resume} />
         <Route path='/projects' component={ProjectsPage} />

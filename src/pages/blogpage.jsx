@@ -6,7 +6,6 @@ import 'mdbreact/dist/css/mdb.css';
 import { useHistory } from "react-router-dom";
 import { BreadcrumbsItem } from "react-breadcrumbs-dynamic";
 import BackButton from "../components/backbutton";
-import ContactList from "../components/contactlist";
 
 
 function BlogPage() {
@@ -17,7 +16,7 @@ function BlogPage() {
             <BreadcrumbsItem to={'/blog'} eventKey={2.1} compare={(a, b) => a.weight - b.weight} >
                 Blog
         </BreadcrumbsItem>
-        <ContactList/>
+    
             <MDBCard >
                 <MDBCardBody>
 
