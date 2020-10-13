@@ -1,12 +1,89 @@
 import React from 'react';
-import './header-styles.scss'
+import { BrowserRouter as Router } from 'react-router-dom';
+import {
+  MDBMask,
+  MDBRow,
+  MDBCol,
+  MDBBtn,
+  MDBView,
+  MDBContainer,
+  MDBAnimation, MDBNav, MDBNavItem, MDBNavLink, MDBSmoothScroll
+} from 'mdbreact';
+import './AppPage.css';
 
-const Header = (props) => (
-    <header className='front-header'>
-    
-        <h1>{props.title}</h1>
-    
-    </header>
-)
+class Header extends React.Component {
+  state = {
+    collapsed: false
+  };
+
+  handleTogglerClick = () => {
+    const { collapsed } = this.state;
+    this.setState({
+      collapsed: !collapsed
+    });
+  };
+
+
+
+  render() {
+    const { collapsed } = this.state;
+
+    const overlay = (
+      <div
+        id='sidenav-overlay'
+        style={{ backgroundColor: 'transparent' }}
+        onClick={this.handleTogglerClick}
+      />
+    );
+    return (
+      <div id='apppage'>
+        
+            
+        <MDBView>
+          <MDBMask className='white-text gradient' />
+          <MDBContainer
+            style={{ height: '100%', width: '100%', paddingTop: '10rem' }}
+            className='d-flex justify-content-center white-text align-items-center'
+          >
+            <MDBRow>
+              <MDBCol md='6' className='text-center text-md-left mt-xl-5 mb-5'>
+                <MDBAnimation type='fadeInLeft' delay='.3s'>
+                  <h1 className='h1-responsive font-weight-bold mt-sm-5'>
+                    {this.props.title}
+                  </h1>
+                  <hr className='hr-light' />
+                  <h6 className='mb-4'>
+                   {this.props.intro}
+                  </h6>
+                 
+                      <MDBNavLink to='/home'>
+                        <MDBSmoothScroll to={this.props.section}>
+                  <MDBBtn outline color='white'>
+                   Read On
+                  </MDBBtn>
+                  </MDBSmoothScroll>
+                  </MDBNavLink>
+       
+                </MDBAnimation>
+              </MDBCol>
+
+              <MDBCol md='6' xl='5' className='mt-xl-5'>
+                <MDBAnimation type='fadeInRight' delay='.3s'>
+                  <img
+                    src='https://mdbootstrap.com/img/Mockups/Transparent/Small/admin-new.png'
+                    alt=''
+                    className='img-fluid'
+                  />
+                </MDBAnimation>
+              </MDBCol>
+            </MDBRow>
+          </MDBContainer>
+        </MDBView>
+
+        
+      </div>
+    );
+  }
+}
 
 export default Header;

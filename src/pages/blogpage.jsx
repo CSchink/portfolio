@@ -1,17 +1,21 @@
 import React from "react";
-import { MDBRow, MDBCol, MDBCard, MDBCardBody, MDBMask, MDBIcon, MDBView, MDBBtn } from "mdbreact";
+import { MDBRow, MDBCol, MDBCard, MDBCardBody, MDBMask, MDBView, MDBBtn } from "mdbreact";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
-import Navigation from "../components/navigation";
 import { useHistory } from "react-router-dom";
+import { BreadcrumbsItem } from "react-breadcrumbs-dynamic";
+import BackButton from "../components/backbutton";
 
 
-function BlogPage () {
+function BlogPage() {
     let history = useHistory();
     return (
         <div>
-            <Navigation />
+            {/* <Navigation /> */}
+            <BreadcrumbsItem to={'/blog'} eventKey={2.1} compare={(a, b) => a.weight - b.weight} >
+                Blog
+        </BreadcrumbsItem>
             <MDBCard >
                 <MDBCardBody>
 
@@ -35,8 +39,8 @@ function BlogPage () {
                             <p>
                                 Greg's MUI Datatables provide an excellent solution for developers requiring a sleek and responsive table design in their React project.  One drawback is the lack of a cascading filter element.  Join me on my quest to build one.
             </p>
-                           
-                            <MDBBtn color="primary" size="md" className="waves-light " onClick={() => { history.push('/new-location') }}>
+
+                            <MDBBtn color="elegant" size="md" className="waves-light " onClick={() => { history.push('/cascadingfilter') }}>
                                 Read more
             </MDBBtn>
                         </MDBCol>
@@ -44,33 +48,15 @@ function BlogPage () {
                     <hr className="my-5" />
                     <MDBRow>
                         <MDBCol lg="7">
-                            <a href="#!" className="pink-text">
-                                <h6 className="font-weight-bold mb-3">
-                                    <MDBIcon icon="image" className="pr-2" />
-                Lifestyle
-              </h6>
-                            </a>
+
                             <h3 className="font-weight-bold mb-3 p-0">
-                                <strong>Title of the news</strong>
+                                <strong>How to edit data in MUI Datatables</strong>
                             </h3>
                             <p>
-                                At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                                blanditiis praesentium voluptatum deleniti atque corrupti quos
-                                dolores et quas molestias excepturi sint occaecati cupiditate
-                                non provident.
+                                In this post I highlight one effective way I've found to quickly and easily edit data within MUI Datatables
             </p>
-                            <p>
-                                by
-              <a href="#!">
-                                    <strong>Carine Fox</strong>
-                                </a>
-              , 14/08/2018
-            </p>
-                            <MDBBtn
-                                color="pink"
-                                size="md"
-                                className="mb-lg-0 mb-4 waves-light"
-                            >
+
+                            <MDBBtn color="elegant" size="md" className="waves-light " onClick={() => { history.push('/new-location') }}>
                                 Read more
             </MDBBtn>
                         </MDBCol>
@@ -78,7 +64,7 @@ function BlogPage () {
                             <MDBView className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>
                                 <img
                                     className="img-fluid"
-                                    src="https://mdbootstrap.com/img/Photos/Others/img%20(34).jpg"
+                                    src="https://brianhann.com/wp-content/uploads/2015/03/ui-grid-modal-row-editor.png"
                                     alt=""
                                 />
                                 <a href="#!">
@@ -102,35 +88,23 @@ function BlogPage () {
                             </MDBView>
                         </MDBCol>
                         <MDBCol lg="7">
-                            <a href="#!" className="indigo-text">
-                                <h6 className="font-weight-bold mb-3">
-                                    <MDBIcon icon="suitcase" className="pr-2" />
-                Food
-              </h6>
-                            </a>
+
                             <h3 className="font-weight-bold mb-3 p-0">
-                                <strong>Title of the news</strong>
+                                <strong>How I learned to code</strong>
                             </h3>
                             <p>
-                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-                                aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                                voluptatem sequi nesciunt. Neque porro qui dolorem ipsum quia
-                                sit amet.
+                                Tutorials, tutors, books, practice, persistence - here's how I learned JavaScript, React, and MongoDB.
             </p>
-                            <p>
-                                by
-              <a href="#!">
-                                    <strong>Carine Fox</strong>
-                                </a>
-              , 11/08/2018
-            </p>
-                            <MDBBtn color="indigo" size="md" className="waves-light ">
+
+                            <MDBBtn color="elegant" size="md" className="waves-light " onClick={() => { history.push('/new-location') }}>
                                 Read more
             </MDBBtn>
                         </MDBCol>
                     </MDBRow>
                 </MDBCardBody>
+                <BackButton url='/home'/>
             </MDBCard>
+            
         </div>
     );
 }

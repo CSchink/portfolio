@@ -1,16 +1,25 @@
 import React from 'react';
 import Directory from '../components/directory';
-import Header from '../components/header';
 import './homepage.styles.scss'
+import './projectspage-styles.scss'
+import ContactList from '../components/contactlist';
+import { MDBCard } from 'mdbreact';
+import BackButton from '../components/backbutton';
 
 const HomePage = () => (
-    <div>
-        <div className='homepage' >
-            <Header title="Corey Schink's Portfolio" />
+    <MDBCard style={{paddingBottom: '100px'}}>
+
+
+        <ContactList />
+
+        <div className='projectspage' >
+
             <Directory />
 
         </div>
-    </div>
+        <BackButton url='/'/>
+    </MDBCard>
+
 )
 
 export default HomePage;

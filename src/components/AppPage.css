@@ -1,0 +1,45 @@
+#apppage .gradient {
+    background: -moz-linear-gradient(
+      45deg,
+      rgba(29, 29, 36, 0.7),
+      rgba(21, 26, 25, 0.7) 100%
+    );
+    background: -webkit-linear-gradient(
+      45deg,
+      rgba(34, 32, 48, 0.7),
+      rgba(0, 0, 0, 0.7) 100%
+    );
+    background: -webkit-gradient(
+      linear,
+      45deg,
+      from(rgba(164, 162, 180, 0.7)),
+      to(rgba(14, 19, 18, 0.7))
+    );
+    background: -o-linear-gradient(
+      45deg,
+      rgba(20, 19, 22, 0.7),
+      rgba(252, 252, 252, 0.7) 100%
+    );
+    background: linear-gradient(
+      45deg,
+      rgba(21, 21, 22, 0.7),
+      rgba(179, 182, 181, 0.7) 100%
+    );
+  }
+  
+  #apppage .view {
+    background-image: url('https://barnimages.com/wp-content/uploads/2018/04/20170904-barnimages-003.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+    
+  }
+
+  body {
+    z-index: 1
+  }
+  
+  #apppage h6 {
+    line-height: 1.7;
+  }

@@ -1,16 +1,13 @@
-// a:link, a:visited {
-//     // background-color: #5344c7;
-//     color: rgb(0, 0, 0);
-//     padding: 14px 25px;
-//     text-align: center;
-//     text-decoration: none;
-//     display: inline-block;
-//   }
-  
-//   a:hover, a:active {
-//     background-color: rgb(54, 54, 153);
-//     color: white;
-//   }
+a:link,
+a:visited {
+    // background-color: #5344c7;
+    color: rgb(0, 0, 0);
+    padding: 10px 10px;
+    // text-align: center;
+    // text-decoration: none;
+    display: inline-block;
+    list-style: none;
+}
 
 .column {
     column-count: 3;
@@ -19,11 +16,16 @@
     align-self: start;
 }
 
+
 .sidebar {
-    float: right;
+    display: flex;
     position: sticky;
-    align-items: center;
+    align-items: right;
     align-self: start;
+    list-style: none;
+    // border-radius: 50%;
+    // padding: 5px;
+    // width: 150px;
 }
 
 p {
@@ -38,7 +40,10 @@ p {
     quotes: "\201C""\201D""\2018""\2019";
 }
 
-
+.heading {
+    font-weight: bold;
+    text-align: center;
+}
 
 blockquote:before {
     color: #ccc;

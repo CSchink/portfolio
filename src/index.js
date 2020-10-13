@@ -4,13 +4,14 @@ import './index.css';
 import App from './App';
 import {BrowserRouter} from 'react-router-dom'
 import * as serviceWorker from './serviceWorker';
+import {ThroughProvider} from 'react-through'
 
 ReactDOM.render(
-  <React.StrictMode>
+  <ThroughProvider>
     <BrowserRouter>
     <App />
     </BrowserRouter>
-  </React.StrictMode>,
+  </ThroughProvider>,
   document.getElementById('root')
 );
 

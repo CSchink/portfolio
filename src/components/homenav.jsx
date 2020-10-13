@@ -1,16 +1,15 @@
-
 import React, { Component } from 'react';
 import {
     MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBDropdown,
     MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon, MDBLink
 } from "mdbreact";
 import { BrowserRouter as Router } from 'react-router-dom';
+
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
-import { BreadcrumbsItem } from 'react-breadcrumbs-dynamic';
 
-class Navigation extends Component {
+class HomeNav extends Component {
     state = {
         isOpen: false
     };
@@ -23,24 +22,12 @@ class Navigation extends Component {
         return (
       
                 <MDBNavbar color="primary-color" dark expand="md">
-                    <MDBNavbarBrand>
-                    <BreadcrumbsItem to={'/home'} compare={(a,b)=>a.weight-b.weight} >
-                            Blog
-                        </BreadcrumbsItem>
-                    </MDBNavbarBrand>
+                    {/* <MDBNavbarBrand>
+                        <strong className="white-text">Navbar</strong>
+                    </MDBNavbarBrand> */}
                     <MDBNavbarToggler onClick={this.toggleCollapse} />
                     <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
-                        <MDBNavbarNav left>
-                            
-                            
-                           
-                            <MDBNavItem>
-                                <MDBNavLink to="/blog">Blog</MDBNavLink>
-                            </MDBNavItem>
-                            <MDBNavItem>
-                                <MDBNavLink to="/projects">Projects</MDBNavLink>
-                            </MDBNavItem>
-                        </MDBNavbarNav>
+                        
                         <MDBNavbarNav right>
                             <MDBNavItem>
                                 {/* <MDBDropdown>
@@ -74,4 +61,4 @@ class Navigation extends Component {
     }
 }
 
-export default Navigation;
+export default HomeNav;
