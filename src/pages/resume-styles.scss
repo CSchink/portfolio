@@ -9,13 +9,21 @@ a:visited {
     list-style: none;
 }
 
+h3 {
+    font-style: italic;
+}
+
 .column {
-    column-count: 3;
+    column-count: 2;
     margin-top: auto;
     clear: both;
     align-self: start;
 }
-
+h3{
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 10px;
+}
 
 .sidebar {
     display: flex;
@@ -27,8 +35,9 @@ a:visited {
     z-index: 1;
 }
 
-p {
+p, li {
     padding-left: 10px;
+    font-weight: bold;
 }
 
 .blockquote {
@@ -69,7 +78,9 @@ blockquote p {
     margin-left: auto;
     padding: 5px;
     height: auto;
-    width: 600px;
+    width: 400px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .wrapper {
@@ -78,6 +89,7 @@ blockquote p {
     grid-gap: 16px;
 }
 
+
 .container {
     width: 80%;
     padding: 5px;
@@ -85,15 +97,16 @@ blockquote p {
     margin-left: auto;
     margin-right: auto;
     // padding-top: 10px;
-    background-color: white;
+    // background-color: white;
 }
 
 #top,
 #bottom,
 #left,
 #right {
-    background: rgb(45, 146, 172);
+    background: rgba(139, 68, 20, 0.418);
     position: fixed;
+    z-index: -1;
 }
 #left,
 #right {

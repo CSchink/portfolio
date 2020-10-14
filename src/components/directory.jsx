@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import AboutCard from './aboutcard';
 import MenuItem from './menu-item';
 
 class Directory extends Component {
@@ -33,6 +34,7 @@ class Directory extends Component {
                     <MenuItem key={id} {...otherSectionProps} />
 
                 ))}
+                
             </div>
         )
     }
