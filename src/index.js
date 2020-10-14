@@ -5,11 +5,13 @@ import App from './App';
 import {BrowserRouter} from 'react-router-dom'
 import * as serviceWorker from './serviceWorker';
 import {ThroughProvider} from 'react-through'
-
+import ScrollToTop from '../src/components/scrolltop'
 ReactDOM.render(
   <ThroughProvider>
     <BrowserRouter>
+    <ScrollToTop>
     <App />
+    </ScrollToTop>
     </BrowserRouter>
   </ThroughProvider>,
   document.getElementById('root')
