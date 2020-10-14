@@ -256,7 +256,9 @@ export {AuthProvider, useAuth}`} /> */}
         </Fade>
       </div>
     </div>
+    <Fade right>
     <BackButton url="/projects" />
+    </Fade>
   </MDBCard>
 );
 
