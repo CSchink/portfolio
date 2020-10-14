@@ -5,7 +5,7 @@ import SyntaxComponent from "../components/syntax";
 import Fade from "react-reveal/Fade";
 import { BreadcrumbsItem } from "react-breadcrumbs-dynamic";
 import "../styles/navigation.css";
-import { MDBBtn, MDBCard, MDBSmoothScroll } from "mdbreact";
+import { MDBBtn, MDBCard, MDBIcon, MDBSmoothScroll } from "mdbreact";
 import Header from "../components/header";
 import BackButton from "../components/backbutton";
 
@@ -88,12 +88,15 @@ const Resume = () => (
               </li>
             </ol>
           </div>
-
-          <MDBSmoothScroll to="section2">
-            <MDBBtn className="float-right" outline color="elegant">
-              Continue
-            </MDBBtn>
-          </MDBSmoothScroll>
+          <div>
+            <Fade left>
+              <MDBSmoothScroll to="section2">
+                <MDBBtn rounded className="float-right" outline color="elegant">
+                  <MDBIcon icon="arrow-right" />
+                </MDBBtn>
+              </MDBSmoothScroll>
+            </Fade>
+          </div>
         </Fade>
 
         <Fade left>
@@ -125,15 +128,16 @@ const Resume = () => (
                             }`}
               />
             </div>
-            <div>
+            <Fade right>
               <MDBSmoothScroll to="section3">
-                <MDBBtn className="float-right" outline color="elegant">
-                  Continue
+                <MDBBtn rounded className="float-right" outline color="elegant">
+                  <MDBIcon icon="arrow-right" />
                 </MDBBtn>
               </MDBSmoothScroll>
-            </div>
+            </Fade>
             <div style={{ paddingTop: "300px" }}></div>
             <div id="section3"></div>
+            <h3 className="header">Account Context</h3>
             <Fade right>
               <p className="paragraph">
                 The MongoDB .find() method returns a large JSON object, while
@@ -161,8 +165,8 @@ const Resume = () => (
               </div>
 
               <MDBSmoothScroll to="section4">
-                <MDBBtn className="float-right" outline color="elegant">
-                  Continue
+                <MDBBtn className="float-right" rounded outline color="elegant">
+                  <MDBIcon icon="arrow-right" />
                 </MDBBtn>
               </MDBSmoothScroll>
             </Fade>
@@ -177,11 +181,13 @@ const Resume = () => (
               />
             </Fade>
           </div>
-          <MDBSmoothScroll to="section5">
-            <MDBBtn className="float-right" outline color="elegant">
-              Continue
-            </MDBBtn>
-          </MDBSmoothScroll>
+          <Fade right>
+            <MDBSmoothScroll to="section5">
+              <MDBBtn className="float-right" rounded outline color="elegant">
+                <MDBIcon icon="arrow-right" />
+              </MDBBtn>
+            </MDBSmoothScroll>
+          </Fade>
           <div style={{ paddingTop: "300px" }}></div>
           <div id="section5"></div>
           <p>...and the news feed is populated</p>
@@ -225,8 +231,8 @@ const useAuth = () => React.useContext(AuthContext)
 export {AuthProvider, useAuth}`} /> */}
           </div>
           <MDBSmoothScroll to="section6">
-            <MDBBtn className="float-right" outline color="elegant">
-              Continue
+            <MDBBtn rounded className="float-right" outline color="elegant">
+              <MDBIcon icon="arrow-right" />
             </MDBBtn>
           </MDBSmoothScroll>
 
@@ -257,7 +263,7 @@ export {AuthProvider, useAuth}`} /> */}
       </div>
     </div>
     <Fade right>
-    <BackButton url="/projects" />
+      <BackButton url="/projects" />
     </Fade>
   </MDBCard>
 );
