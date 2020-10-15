@@ -20,7 +20,7 @@ function App() {
       <Navigation />
       <div
         style={{
-          position: "fixed",
+          position: "absolute",
           width: "auto",
           top: "4",
           zIndex: "1",
@@ -55,6 +55,7 @@ function App() {
         <Route path="/blog" component={BlogPage} />
         <Route exact path="/cascadingfilter" component={FilterPost} />
       </Switch>
+      
     </div>
   );
 }

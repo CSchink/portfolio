@@ -29,7 +29,7 @@ function BlogPage() {
       </BreadcrumbsItem>
 
       <MDBCard>
-        <MDBCardBody>
+        <MDBCardBody style={{ paddingTop: "50px" }}>
           <MDBRow>
             <MDBCol lg="5">
               <MDBView className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>

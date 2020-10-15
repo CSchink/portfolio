@@ -92,7 +92,7 @@ const Resume = () => (
             <Fade left>
               <MDBSmoothScroll to="section2">
                 <MDBBtn rounded className="float-right" outline color="elegant">
-                  <MDBIcon icon="arrow-right" />
+                  <MDBIcon icon="arrow-down" />
                 </MDBBtn>
               </MDBSmoothScroll>
             </Fade>
@@ -131,7 +131,7 @@ const Resume = () => (
             <Fade right>
               <MDBSmoothScroll to="section3">
                 <MDBBtn rounded className="float-right" outline color="elegant">
-                  <MDBIcon icon="arrow-right" />
+                  <MDBIcon icon="arrow-down" />
                 </MDBBtn>
               </MDBSmoothScroll>
             </Fade>
@@ -166,7 +166,7 @@ const Resume = () => (
 
               <MDBSmoothScroll to="section4">
                 <MDBBtn className="float-right" rounded outline color="elegant">
-                  <MDBIcon icon="arrow-right" />
+                  <MDBIcon icon="arrow-down" />
                 </MDBBtn>
               </MDBSmoothScroll>
             </Fade>
@@ -184,7 +184,7 @@ const Resume = () => (
           <Fade right>
             <MDBSmoothScroll to="section5">
               <MDBBtn className="float-right" rounded outline color="elegant">
-                <MDBIcon icon="arrow-right" />
+                <MDBIcon icon="arrow-down" />
               </MDBBtn>
             </MDBSmoothScroll>
           </Fade>
@@ -232,7 +232,7 @@ export {AuthProvider, useAuth}`} /> */}
           </div>
           <MDBSmoothScroll to="section6">
             <MDBBtn rounded className="float-right" outline color="elegant">
-              <MDBIcon icon="arrow-right" />
+              <MDBIcon icon="arrow-down" />
             </MDBBtn>
           </MDBSmoothScroll>
 
