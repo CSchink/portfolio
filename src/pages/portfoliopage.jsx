@@ -27,12 +27,12 @@ const PortfolioPage = () => (
         Projects
       </BreadcrumbsItem>
       <BreadcrumbsItem
-        glyph="resume"
+        glyph="wordpress"
         to={"/projects/wordpress"}
         eventKey={2.2}
         compare={(a, b) => a.weight - b.weight}
       >
-        History Lab
+        WordPress and React
       </BreadcrumbsItem>
 
       <div className="container ">

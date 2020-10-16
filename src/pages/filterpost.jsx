@@ -11,13 +11,14 @@ function FilterPost() {
         section="section1"
         title="Building a Cascading Filter"
         intro="It's just as difficult as you'd imagine"
+        src="https://i.pinimg.com/originals/e9/a8/5b/e9a85b5a3a7f83d86a85a4c348938bd5.png"
       />
       <BreadcrumbsItem
-        to={"/blog"}
+        to={"/projects"}
         eventKey={2.1}
         compare={(a, b) => a.weight - b.weight}
       >
-        Blog
+        Projects
       </BreadcrumbsItem>
       <BreadcrumbsItem
         glyph="resume"

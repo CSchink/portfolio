@@ -38,18 +38,19 @@ class ProjectsDirectory extends Component {
         //   linkUrl: "/projects/portfolio",
         // },
         {
-          title: "Web Scraper",
+          title: "Styling with CSS",
           imageUrl:
-            "https://cubelogic.com/wp-content/uploads/2020/02/Python-is-it-true-what-they-say-1024x683.jpg",
+            "https://www.codespot.org/assets/css.jpg",
           size: "large",
           id: 5,
           linkUrl: "/projects/resume",
         },
 
         {
-          title: "GraphQL",
+          title: "Editing Data in MUI Datatables",
+          subtitle: "with JavaScript",
           imageUrl:
-            "https://res.cloudinary.com/practicaldev/image/fetch/s--_HAFrKTk--/c_imagga_scale,f_auto,fl_progressive,h_720,q_auto,w_1280/https://thepracticaldev.s3.amazonaws.com/i/oqz1tsx4no5cy3rteav1.png",
+            "https://i.pinimg.com/originals/e9/a8/5b/e9a85b5a3a7f83d86a85a4c348938bd5.png",
           size: "large",
           id: 5,
           linkUrl: "/projects/resume",
