@@ -10,8 +10,8 @@ const BackButton = ({ url }) => {
         history.push(url)
     }
     return (
-        <div style={{paddingTop: '40px'}}>
-            <MDBBtn outline color='black' tag='a' onClick={handleClick}><MDBIcon icon="arrow-circle-left" /></MDBBtn>
+        <div style={{paddingTop: '10px'}}>
+            <MDBBtn outline color='black' rounded tag='a' onClick={handleClick}><MDBIcon icon="arrow-circle-left" /></MDBBtn>
         </div>
     );
 };

@@ -6,6 +6,7 @@ import Resume from "./pages/resume";
 import ProjectsPage from "./pages/projectspage";
 import BlogPage from "./pages/blogpage";
 import Header from "./components/header";
+import Jump from "react-reveal/Jump";
 import { Breadcrumbs, BreadcrumbsItem } from "react-breadcrumbs-dynamic";
 // import CrumbIconItem from './components/CrumbIconItem';
 // import { base_path } from './constants'
@@ -28,14 +29,16 @@ function App() {
           alignItems: "right",
         }}
       >
-        <MDBCard>
-          <Breadcrumbs
-            separator={<b> / </b>}
-            // container={MDBNav}
-            finalProps={{ active: true }}
-            duplicateProps={{ to: "href" }}
-          />
-        </MDBCard>
+        <Jump>
+          <MDBCard>
+            <Breadcrumbs
+              separator={<b> / </b>}
+              // container={MDBNav}
+              finalProps={{ active: true }}
+              duplicateProps={{ to: "href" }}
+            />
+          </MDBCard>
+        </Jump>
       </div>
 
       <BreadcrumbsItem
@@ -55,7 +58,6 @@ function App() {
         <Route path="/blog" component={BlogPage} />
         <Route exact path="/cascadingfilter" component={FilterPost} />
       </Switch>
-      
     </div>
   );
 }

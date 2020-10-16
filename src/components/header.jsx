@@ -1,5 +1,5 @@
-import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
 import {
   MDBMask,
   MDBRow,
@@ -7,80 +7,74 @@ import {
   MDBBtn,
   MDBView,
   MDBContainer,
-  MDBAnimation, MDBNav, MDBNavItem, MDBNavLink, MDBSmoothScroll
-} from 'mdbreact';
-import './AppPage.css';
+  MDBAnimation,
+  MDBNav,
+  MDBNavItem,
+  MDBNavLink,
+  MDBSmoothScroll,
+} from "mdbreact";
+import "./AppPage.css";
 
 class Header extends React.Component {
   state = {
-    collapsed: false
+    collapsed: false,
   };
 
   handleTogglerClick = () => {
     const { collapsed } = this.state;
     this.setState({
-      collapsed: !collapsed
+      collapsed: !collapsed,
     });
   };
-
-
 
   render() {
     const { collapsed } = this.state;
 
     const overlay = (
       <div
-        id='sidenav-overlay'
-        style={{ backgroundColor: 'transparent' }}
+        id="sidenav-overlay"
+        style={{ backgroundColor: "transparent" }}
         onClick={this.handleTogglerClick}
       />
     );
     return (
-      <div id='apppage'>
-        
-            
-        <MDBView >
-          <MDBMask className='white-text gradient' />
+      <div id="apppage">
+        <MDBView>
+          <MDBMask className="white-text gradient" />
           <MDBContainer
-            style={{ height: '100%', width: '100%', paddingTop: '10rem' }}
-            className='d-flex justify-content-center white-text align-items-center'
+            style={{ height: "100%", width: "100%", paddingTop: "10rem" }}
+            className="d-flex justify-content-center white-text align-items-center"
           >
             <MDBRow>
-              <MDBCol md='6' className='text-center text-md-left mt-xl-5 mb-5'>
-                <MDBAnimation type='fadeInLeft' delay='.3s'>
-                  <h1 className='h1-responsive font-weight-bold mt-sm-5'>
+              <MDBCol md="6" className="text-center text-md-left mt-xl-5 mb-5">
+                <MDBAnimation type="fadeInLeft" delay=".3s">
+                  <h1 className="h1-responsive font-weight-bold mt-sm-5">
                     {this.props.title}
                   </h1>
-                  <hr className='hr-light' />
-                  <h6 className='mb-4'>
-                   {this.props.intro}
-                  </h6>
-                 
-                   
-                        <MDBSmoothScroll to={this.props.section}>
-                  <MDBBtn outline color='white'>
-                   Read On
-                  </MDBBtn>
+                  <hr className="hr-light" />
+                  <h6 className="mb-4">{this.props.intro}</h6>
+
+                  <MDBSmoothScroll to={this.props.section}>
+                    <MDBBtn outline color="white">
+                      Read On
+                    </MDBBtn>
                   </MDBSmoothScroll>
-              
-       
                 </MDBAnimation>
               </MDBCol>
 
-              <MDBCol md='6' xl='5' className='mt-xl-5'>
-                <MDBAnimation type='fadeInRight' delay='.3s'>
+              <MDBCol md="6" xl="5" className="mt-xl-5">
+                <MDBAnimation type="fadeInRight" delay=".3s">
                   <img
-                    src='https://media.istockphoto.com/vectors/code-icon-in-trendy-flat-style-isolated-on-grey-background-code-for-vector-id1173157507'
-                    alt=''
-                    className='img-fluid'
+                    src="https://barnimages.com/wp-content/uploads/2018/04/20170904-barnimages-003.jpg"
+                    alt=""
+                    style={{opacity: '7'}}
+                    className="img-fluid"
                   />
                 </MDBAnimation>
               </MDBCol>
             </MDBRow>
           </MDBContainer>
         </MDBView>
-
-        
       </div>
     );
   }

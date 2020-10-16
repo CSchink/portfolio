@@ -35,7 +35,7 @@ function BlogPage() {
               <MDBView className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>
                 <img
                   className="img-fluid"
-                  src="https://codesandbox.io/api/v1/sandboxes/0qx6yljwlv/screenshot.png"
+                  src="https://hackernoon.com/drafts/im4m30bb.png"
                   alt=""
                 />
                 <a href="#!">
@@ -45,7 +45,7 @@ function BlogPage() {
             </MDBCol>
             <MDBCol lg="7">
               <h3 className="font-weight-bold mb-3 p-0">
-                <strong>Building a Cascading Filter for MUI Datatables</strong>
+                <strong>Datastructures and Algorithms</strong>
               </h3>
               <p>
                 Greg's MUI Datatables provide an excellent solution for
@@ -56,6 +56,7 @@ function BlogPage() {
 
               <MDBBtn
                 color="elegant"
+                outline
                 size="md"
                 className="waves-light "
                 onClick={() => {
@@ -70,7 +71,7 @@ function BlogPage() {
           <MDBRow>
             <MDBCol lg="7">
               <h3 className="font-weight-bold mb-3 p-0">
-                <strong>How to edit data in MUI Datatables</strong>
+                <strong>React Class Components vs Hooks</strong>
               </h3>
               <p>
                 In this post I highlight one effective way I've found to quickly
@@ -80,6 +81,7 @@ function BlogPage() {
               <MDBBtn
                 color="elegant"
                 size="md"
+                outline
                 className="waves-light "
                 onClick={() => {
                   history.push("/new-location");
@@ -92,7 +94,7 @@ function BlogPage() {
               <MDBView className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>
                 <img
                   className="img-fluid"
-                  src="https://brianhann.com/wp-content/uploads/2015/03/ui-grid-modal-row-editor.png"
+                  src="https://rangleio.ghost.io/content/images/2019/04/hook_desktop_16_9.png"
                   alt=""
                 />
                 <a href="#!">
@@ -107,7 +109,7 @@ function BlogPage() {
               <MDBView className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>
                 <img
                   className="img-fluid"
-                  src="https://mdbootstrap.com/img/Photos/Others/img (28).jpg"
+                  src="https://miro.medium.com/max/12000/1*vol_miIXTo1rCelcwO7Mlg.jpeg"
                   alt=""
                 />
                 <a href="#!">
@@ -127,7 +129,9 @@ function BlogPage() {
               <MDBBtn
                 color="elegant"
                 size="md"
-                className="waves-light "
+                className="waves-light"
+                outline
+                
                 onClick={() => {
                   history.push("/new-location");
                 }}
