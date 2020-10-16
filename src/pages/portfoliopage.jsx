@@ -1,13 +1,11 @@
 import React from "react";
-import { Fieldset } from "primereact/fieldset";
 import "./resume-styles.scss";
 import "primereact/resources/themes/saga-blue/theme.css";
 import SyntaxComponent from "../components/syntax";
-import ContactList from "../components/contactlist";
 import Fade from "react-reveal/Fade";
 import { BreadcrumbsItem } from "react-breadcrumbs-dynamic";
 import "../styles/navigation.css";
-import { MDBCard } from "mdbreact";
+import { MDBBtn, MDBCard, MDBIcon, MDBSmoothScroll } from "mdbreact";
 import Header from "../components/header";
 import BackButton from "../components/backbutton";
 
@@ -15,8 +13,9 @@ const PortfolioPage = () => (
   <MDBCard>
     <Header
       section="section1"
-      title="Portfolio"
-      intro="A comprehensive database for students of science and history"
+      title="WordPress and React"
+      intro="A custom WordPress theme built with React and CSS"
+      src="https://camo.githubusercontent.com/64906f3cafcc38a760b6528f4c317df717c1299d/68747470733a2f2f736e6970636172742e636f6d2f6d656469612f3230333837322f72656163742d776f726470726573732d726573742d6170692e6a7067"
     />
 
     <div id="section1">
@@ -29,11 +28,11 @@ const PortfolioPage = () => (
       </BreadcrumbsItem>
       <BreadcrumbsItem
         glyph="resume"
-        to={"/projects/resume"}
+        to={"/projects/wordpress"}
         eventKey={2.2}
         compare={(a, b) => a.weight - b.weight}
       >
-        Portfolio
+        History Lab
       </BreadcrumbsItem>
 
       <div className="container ">
@@ -45,7 +44,7 @@ const PortfolioPage = () => (
           }}
         >
           {" "}
-          My Portfolio{" "}
+          History Lab{" "}
         </h1>
         <br></br>
 
@@ -90,82 +89,183 @@ const PortfolioPage = () => (
               </li>
             </ol>
           </div>
-          <h3>Login and User Authentication</h3>
-          {/* <div style={{ paddingTop: '350px' }} /> */}
+          <div>
+            <Fade left>
+              <MDBSmoothScroll to="section2">
+                <MDBBtn rounded className="float-right" outline color="elegant">
+                  <MDBIcon icon="arrow-down" />
+                </MDBBtn>
+              </MDBSmoothScroll>
+            </Fade>
+          </div>
+        </Fade>
+
+        <Fade left>
+          <div style={{ paddingTop: "300px" }}></div>
+          <div id="section2">
+            {/* <div style={{ paddingTop: '350px' }} /> */}
+            <h3>User Authentication</h3>
+            <p className="paragraph">
+              The login functionality first takes a simple form component. Upon
+              form submission the Express server requests the relevant user
+              documents from MongoDB.
+            </p>
+            <div className="column">
+              <img
+                alt=""
+                className="centerimage"
+                src={require("../assets/login.PNG")}
+              />
+              <SyntaxComponent
+                text={`async function userCheck(client, username, password) {
+                        const cursor = await client.db("historylab").collection("logindata").find({});
+                        let results = await cursor.toArray();
+                        let confirmation = results.some(function (result) {
+                            if (result.user === username && result.password === password) 
+                            { return true; } 
+                            else { return false; }
+                                });
+                        return confirmation;
+                            }`}
+              />
+            </div>
+            <Fade right>
+              <MDBSmoothScroll to="section3">
+                <MDBBtn rounded className="float-right" outline color="elegant">
+                  <MDBIcon icon="arrow-down" />
+                </MDBBtn>
+              </MDBSmoothScroll>
+            </Fade>
+            <div style={{ paddingTop: "300px" }}></div>
+            <div id="section3"></div>
+            <h3 className="header">Account Context</h3>
+            <Fade right>
+              <p className="paragraph">
+                The MongoDB .find() method returns a large JSON object, while
+                the toArray() method converts this data to the array of
+                documents we are looking for.{" "}
+              </p>
+              <p className="paragraph">
+                Once we retrieve confirmation sessionStorage is set with a token
+                and notifications are retrieved from the database
+              </p>
+              <div>
+                <SyntaxComponent
+                  text={`async function returnAccount(token) {
+    
+    const account = await getAccount({ user: username, password: password }, token);
+    const notifications = await PusherContext.retrieveNotifications({User: account.user})
+      accountContext.setAccount({
+       user: account.user,
+       image: account.image,
+       notifications: notifications
+      });
+      
+  }`}
+                />
+              </div>
+
+              <MDBSmoothScroll to="section4">
+                <MDBBtn className="float-right" rounded outline color="elegant">
+                  <MDBIcon icon="arrow-down" />
+                </MDBBtn>
+              </MDBSmoothScroll>
+            </Fade>
+            <div style={{ paddingTop: "300px" }}></div>
+            <div id="section4"></div>
+            <Fade left>
+              <p>Finally, the profile page is displayed.</p>
+              <img
+                alt=""
+                className="centerimage"
+                src={require("../assets/feedpage.PNG")}
+              />
+            </Fade>
+          </div>
+          <Fade right>
+            <MDBSmoothScroll to="section5">
+              <MDBBtn className="float-right" rounded outline color="elegant">
+                <MDBIcon icon="arrow-down" />
+              </MDBBtn>
+            </MDBSmoothScroll>
+          </Fade>
+          <div style={{ paddingTop: "300px" }}></div>
+          <div id="section5"></div>
+          <p>...and the news feed is populated</p>
+
           <div>
             <img
               alt=""
               className="centerimage"
-              src={require("../assets/login.PNG")}
+              src={require("../assets/feedpage2.PNG")}
             />
           </div>
+
+          <hr />
           <div>
-            <SyntaxComponent />
-          </div>
+            {/* <SyntaxComponent text={`import React from 'react'
+import { hasToken } from '../util/tokenutil';
+import history from '../util/historyutil';
 
-          <div className="blockquote">
-            <ul>
-              <li>Helllo</li>
-              <li>Helllo</li>
-              <li>Helllo</li>
-              <li>Helllo</li>
-              <li>Helllo</li>
-            </ul>
-          </div>
+const AuthContext = React.createContext()
+function AuthProvider(props) {
 
-          <div style={{ fontStyle: "italic" }} className="blockquote">
-            <p>Hello this is what I did</p>
-          </div>
+  const [loggedIn, setloggedIn] = React.useState(hasToken());
+  const login = (token) => { 
+    sessionStorage.setItem("token", token)
+    setloggedIn(true)
+    
+    // history.push('/data')
+    } 
+  const logout = () => { 
+      setloggedIn(false)
+      // sessionStorage.removeItem('token');
+      sessionStorage.clear();
 
-          <p className="paragraph">
-            I am a thing I am a thing I am a thing I am a thing I am a thing I
-            am a thingI am a thing I am a thing I am a thing I am a thing I am a
-            thing I am a thing I am a thing I am a thingI am a thing I am a
-            thing I am a thing I am a thing I am a thing I am a thing I am a
-            thing I am a thingI am a thing I am a thing I am a thing I am a
-            thing I am a thing I am a thing I am a thing I am a thingI am a
-            thing I am a thing I am a thing I am a thing I am a thing I am a
-            thing I am a thing I am a thingI am a thing I am a thing I am a
-            thing I am a thing I am a thing I am a thing I am a thing I am a
-            thingI am a thing I am a thing I am a thing I am a thing I am a
-            thing I am a thing I am a thing I am a thingI am a thing I am a
-            thing I am a thing I am a thing I am a thing I am a thing I am a
-            thing I am a thingI am a thing I am a thing I am a thing I am a
-            thing I am a thing I am a thing I am a thing I am a thingI am a
-            thing I am a thing{" "}
+    //   history.push('/') 
+} 
+  return (
+    <AuthContext.Provider value={{loggedIn, login, logout}} {...props} />
+  )
+}
+const useAuth = () => React.useContext(AuthContext)
+export {AuthProvider, useAuth}`} /> */}
+          </div>
+          <MDBSmoothScroll to="section6">
+            <MDBBtn rounded className="float-right" outline color="elegant">
+              <MDBIcon icon="arrow-down" />
+            </MDBBtn>
+          </MDBSmoothScroll>
+
+          <div style={{ paddingTop: "300px" }}></div>
+          <div id="section6"></div>
+          <p>
+            ...and now the user can access the three tables, each painstakingly
+            designed over 3 years to categorize scientific, historical, and
+            philosophical data.
           </p>
-          <div className="column">
-            <Fieldset style={{ color: "black" }} legend="Header">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </Fieldset>
-            <br></br>
-            <Fieldset style={{ color: "black" }} legend="Header">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </Fieldset>
-            <br></br>
-            <Fieldset style={{ color: "black" }} legend="Header">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </Fieldset>
-          </div>
+          <img
+            alt=""
+            className="centerimage"
+            src={require("../assets/tables.PNG")}
+          />
+          <p>
+            They can enter data, edit it, and each interaction they make with
+            the tables is recorded in MongoDB for use with the notifications
+            system and news feed.
+          </p>
+          <SyntaxComponent
+            text={`export async function newNotifications(request) {
+            return instance.post("/newnotifications", request, {
+                headers: { authorization: token() },
+            });`}
+          />
         </Fade>
       </div>
     </div>
-    <BackButton url="/projects" />
+    <Fade right>
+      <BackButton url="/projects" />
+    </Fade>
   </MDBCard>
 );
 

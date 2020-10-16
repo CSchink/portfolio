@@ -15,6 +15,7 @@ const Resume = () => (
       section="section1"
       title="History Lab"
       intro="A comprehensive database for students of science and history"
+      src="https://i.morioh.com/67feeaf72f.png"
     />
 
     <div id="section1">

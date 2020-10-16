@@ -20,7 +20,7 @@ class ProjectsDirectory extends Component {
             "https://camo.githubusercontent.com/64906f3cafcc38a760b6528f4c317df717c1299d/68747470733a2f2f736e6970636172742e636f6d2f6d656469612f3230333837322f72656163742d776f726470726573732d726573742d6170692e6a7067",
           size: "large",
           id: 5,
-          linkUrl: "/projects/python",
+          linkUrl: "/projects/wordpress",
         },
         {
           title: "Cascading Filters",

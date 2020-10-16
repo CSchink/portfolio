@@ -65,9 +65,9 @@ class Header extends React.Component {
               <MDBCol md="6" xl="5" className="mt-xl-5">
                 <MDBAnimation type="fadeInRight" delay=".3s">
                   <img
-                    src="https://barnimages.com/wp-content/uploads/2018/04/20170904-barnimages-003.jpg"
+                    src={this.props.src}
                     alt=""
-                    style={{opacity: '7'}}
+                    style={{opacity: '.8'}}
                     className="img-fluid"
                   />
                 </MDBAnimation>

@@ -53,7 +53,7 @@ function App() {
         <Route exact path="/" component={HomePage} />
         <Route path="/home" component={HomePage} />
         <Route exact path="/projects/resume" component={Resume} />
-        <Route exact path="/projects/portfolio" component={PortfolioPage} />
+        <Route exact path="/projects/wordpress" component={PortfolioPage} />
         <Route path="/projects" component={ProjectsPage} />
         <Route path="/blog" component={BlogPage} />
         <Route exact path="/cascadingfilter" component={FilterPost} />

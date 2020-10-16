@@ -22,8 +22,8 @@
     );
     background: linear-gradient(
       45deg,
-      rgba(21, 21, 22, 0.7),
-      rgba(179, 182, 181, 0.7) 100%
+      rgba(0, 255, 0, 0.7),
+      rgb(48, 96, 255) 100%
     );
   }
   
