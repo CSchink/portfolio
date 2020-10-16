@@ -10,7 +10,7 @@ const ProjectsPage = () => (
     <BreadcrumbsItem glyph="user" to={"/projects"} eventKey={1.1}>
       Projects
     </BreadcrumbsItem>
-    <div className="projectspage" style={{ paddingTop: "70px" }}>
+    <div className="directory" style={{ paddingTop: "70px" }}>
       <ProjectsDirectory />
     </div>
     <div>
