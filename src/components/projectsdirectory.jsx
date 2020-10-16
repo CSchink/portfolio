@@ -37,14 +37,14 @@ class ProjectsDirectory extends Component {
         //   id: 1,
         //   linkUrl: "/projects/portfolio",
         // },
-        // {
-        //   title: "Web Scraper",
-        //   imageUrl:
-        //     "https://cubelogic.com/wp-content/uploads/2020/02/Python-is-it-true-what-they-say-1024x683.jpg",
-        //   size: "large",
-        //   id: 5,
-        //   linkUrl: "/projects/resume",
-        // },
+        {
+          title: "Web Scraper",
+          imageUrl:
+            "https://cubelogic.com/wp-content/uploads/2020/02/Python-is-it-true-what-they-say-1024x683.jpg",
+          size: "large",
+          id: 5,
+          linkUrl: "/projects/resume",
+        },
 
         {
           title: "GraphQL",
