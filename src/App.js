@@ -14,6 +14,9 @@ import FilterPost from "./pages/filterpost";
 import { MDBCard, MDBNav } from "mdbreact";
 import Navigation from "./components/navigation";
 import PortfolioPage from "./pages/portfoliopage";
+import Timeline from "./components/timeline";
+import BlogDirectory from "./components/blogdirectory";
+import GraphqlPage from "./pages/graphqlpage";
 
 function App() {
   return (
@@ -52,11 +55,14 @@ function App() {
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route path="/home" component={HomePage} />
-        <Route exact path="/projects/resume" component={Resume} />
+        <Route exact path="/projects/historylab" component={Resume} />
+        <Route exact path="/projects/resume" component={Timeline} />
         <Route exact path="/projects/wordpress" component={PortfolioPage} />
-        <Route path="/projects" component={ProjectsPage} />
+        <Route exact path="/projects" component={ProjectsPage} />
         <Route path="/blog" component={BlogPage} />
         <Route exact path="/cascadingfilter" component={FilterPost} />
+        <Route exact path="/projects/graphql" component={GraphqlPage} />
+        <Route path="/blogdirectory" component={BlogDirectory} />
       </Switch>
     </div>
   );

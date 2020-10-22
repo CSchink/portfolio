@@ -3,18 +3,14 @@ import ProjectsDirectory from "../components/projectsdirectory";
 import "./projectspage-styles.scss";
 import { BreadcrumbsItem } from "react-breadcrumbs-dynamic";
 import { MDBCard } from "mdbreact";
-import BackButton from "../components/backbutton";
 
 const ProjectsPage = () => (
-  <MDBCard style={{ paddingBottom: "100px" }}>
+  <MDBCard style={{ paddingTop: '30px', paddingBottom: "100px" }}>
     <BreadcrumbsItem glyph="user" to={"/projects"} eventKey={1.1}>
       Projects
     </BreadcrumbsItem>
-    <div className="directory" style={{ paddingTop: "70px" }}>
+    <div className="directory" style={{ paddingTop: "20px" }}>
       <ProjectsDirectory />
-    </div>
-    <div>
-      <BackButton color="dark" url="/home" />
     </div>
   </MDBCard>
 );

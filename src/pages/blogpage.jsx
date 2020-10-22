@@ -18,7 +18,7 @@ import BackButton from "../components/backbutton";
 function BlogPage() {
   let history = useHistory();
   return (
-    <div>
+    <div> 
       {/* <Navigation /> */}
       <BreadcrumbsItem
         to={"/blog"}

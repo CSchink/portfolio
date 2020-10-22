@@ -1,5 +1,4 @@
 import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
 import {
   MDBMask,
   MDBRow,
@@ -8,9 +7,6 @@ import {
   MDBView,
   MDBContainer,
   MDBAnimation,
-  MDBNav,
-  MDBNavItem,
-  MDBNavLink,
   MDBSmoothScroll,
 } from "mdbreact";
 import "./AppPage.css";

@@ -9,21 +9,13 @@ a:visited {
     list-style: none;
 }
 
-h3 {
-    font-style: italic;
-}
-
 .column {
     column-count: 2;
     margin-top: auto;
     clear: both;
     align-self: start;
 }
-h3{
-    padding-top: 5px;
-    text-align: center;
-    padding-bottom: 5px;
-}
+
 
 .sidebar {
     display: flex;
@@ -35,9 +27,12 @@ h3{
     z-index: 1;
 }
 
+h2{
+    padding-bottom: 10px
+}
 p, li {
     padding-left: 10px;
-    font-weight: bold;
+    // font-weight: bold;
 }
 
 .blockquote {
@@ -48,9 +43,11 @@ p, li {
     quotes: "\201C""\201D""\2018""\2019";
 }
 
-.heading {
-    font-weight: bold;
+h3 {
+    font-weight: bold !important;
+    font-style: italic;
     text-align: center;
+    padding-bottom: 30px;
 }
 
 blockquote:before {
@@ -77,8 +74,8 @@ blockquote p {
     margin-right: auto;
     margin-left: auto;
     padding: 5px;
-    height: auto;
-    width: 400px;
+    height: 400px;
+    width: auto;
     padding-top: 30px;
     padding-bottom: 30px;
 }

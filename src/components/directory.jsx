@@ -8,7 +8,7 @@ class Directory extends Component {
     this.state = {
       section: [
         {
-          title: "Projects",
+          title: "Experience",
           imageUrl:
             "https://www.brightnetwork.co.uk/media/ckeditor/2017/03/09/markus-spiske-207946-1.jpg",
           id: 1,

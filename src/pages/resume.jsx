@@ -17,6 +17,7 @@ const Resume = () => (
       intro="A comprehensive database for students of science and history"
       src="https://i.morioh.com/67feeaf72f.png"
     />
+          <div style={{ paddingTop: "300px" }}></div>
 
     <div id="section1">
       <BreadcrumbsItem
@@ -28,7 +29,7 @@ const Resume = () => (
       </BreadcrumbsItem>
       <BreadcrumbsItem
         glyph="resume"
-        to={"/projects/resume"}
+        to={"/projects/historylab"}
         eventKey={2.2}
         compare={(a, b) => a.weight - b.weight}
       >
@@ -36,17 +37,7 @@ const Resume = () => (
       </BreadcrumbsItem>
 
       <div className="container ">
-        <h1
-          className="heading"
-          style={{
-            paddingTop: "60px",
-            textAlign: "center",
-          }}
-        >
-          {" "}
-          History Lab{" "}
-        </h1>
-        <br></br>
+      
 
         <Fade right>
           <div>

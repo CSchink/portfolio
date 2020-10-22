@@ -1,7 +1,8 @@
-import { MDBCard } from "mdbreact";
+import { MDBBtn, MDBCard, MDBIcon, MDBSmoothScroll } from "mdbreact";
 import React from "react";
 import { BreadcrumbsItem } from "react-breadcrumbs-dynamic";
 import Header from "../components/header";
+import Fade from "react-reveal/Fade";
 import SyntaxComponent from "../components/syntax";
 import "./resume-styles.scss";
 function FilterPost() {
@@ -10,7 +11,7 @@ function FilterPost() {
       <Header
         section="section1"
         title="Building a Cascading Filter"
-        intro="It's just as difficult as you'd imagine"
+        intro="Using Grenb's fantastic MUI Datatables to build hierarchical or cascading filters"
         src="https://i.pinimg.com/originals/e9/a8/5b/e9a85b5a3a7f83d86a85a4c348938bd5.png"
       />
       <BreadcrumbsItem
@@ -28,40 +29,107 @@ function FilterPost() {
       >
         Cascading Filter
       </BreadcrumbsItem>
+      <div className='container'>
+      <Fade left>
+        <div style={{ paddingTop: "300px" }}></div>
+        <div id="section1">
+          <h2>
+            <strong>Part one:</strong> Identifying the Problem
+          </h2>
+          <img
+            alt=""
+            className="centerimage"
+            src="https://user-images.githubusercontent.com/19170080/38026128-eac9d506-3258-11e8-92a7-b0d06e5faa82.gif"
+          />
 
-      <MDBCard id="section1" style={{ paddingTop: "80px" }}>
-        <h1 className="heading"> Part 1 </h1>
-        <h3 style={{ textAlign: "center" }}>Identifying the Problem</h3>
-        <p>
-          Cascading filters, also known as hierarchical filters, funnel user
-          selection based on incremental user selection. The first filter limits
-          the second to only those values that are now relevant. It is vital for
-          user experience, especially when dealing with a large dataset.
-        </p>
-        <p>
-          However, at the time of this writing (October 2020) MUI Datatables do
+          <MDBSmoothScroll to="section2">
+            <MDBBtn rounded className="float-right" outline color="elegant">
+              <MDBIcon icon="arrow-down" />
+            </MDBBtn>
+          </MDBSmoothScroll>
+        </div>
+      </Fade>
+      <Fade right>
+        <div style={{ paddingTop: "300px" }}></div>
+        <div id="section2"></div>
+        <h2>
+        Cascading filters, also known as hierarchical filters, funnel user
+        selection based on incremental selection. The first filter
+        limits the second to only those values that remain relevant for the search criteria. It is
+        vital for user experience, especially when dealing with a large
+        dataset.
+        </h2>
+        <h2 className='paragraph' style={{paddingTop: '100px'}}>However, at the time of this writing (October 2020) MUI Datatables do
           not provide such built-in functionality. However, they provide
-          everything necessary for the developer to build their own.
-        </p>
-        <br></br>
-        <h3>Exploring the Table's Built-In Functionality</h3>
-        <p>
-          This is from{" "}
-          <a href="https://www.npmjs.com/package/mui-datatables">
-            MUI Datatables documentation on the <strong>onFilterChange</strong>{" "}
-            method
-          </a>
-        </p>
-        <p className="blockquote">
-          Callback function that triggers when filters have changed.
-        </p>
-        <SyntaxComponent
-          text={` 
-                function(changedColumn: string, filterList: array, 
-                type: enum('checkbox', 'dropdown', 'multiselect', 'textField', 'custom', 'chip', 'reset'), 
-                changedColumnIndex, displayData) => void`}
+          everything necessary for the developer to build their own.</h2>
+
+        <MDBSmoothScroll to="section3">
+          <MDBBtn rounded className="float-right" outline color="elegant">
+            <MDBIcon icon="arrow-down" />
+          </MDBBtn>
+        </MDBSmoothScroll>
+
+        <div style={{ paddingTop: "300px" }}></div>
+        <p>Here is an example of a basic table utilization:</p>
+        <div id="section3"></div>
+         
+
+        <SyntaxComponent text={`
+        import MUIDataTable from "mui-datatables";
+ 
+        const columns = ["Name", "Company", "City", "State"];
+         
+        const data = [
+         ["Joe James", "Test Corp", "Yonkers", "NY"],
+         ["John Walsh", "Test Corp", "Hartford", "CT"],
+         ["Bob Herm", "Test Corp", "Tampa", "FL"],
+         ["James Houston", "Test Corp", "Dallas", "TX"],
+        ];
+         
+        const options = {
+          filterType: 'checkbox',
+        };
+         
+        <MUIDataTable
+          title={"Employee List"}
+          data={data}
+          columns={columns}
+          options={options}
         />
-      </MDBCard>
+        `} />
+        <MDBSmoothScroll to="section4">
+          <MDBBtn rounded className="float-right" outline color="elegant">
+            <MDBIcon icon="arrow-down" />
+          </MDBBtn>
+        </MDBSmoothScroll>
+
+        <div style={{ paddingTop: "300px" }}></div>
+        <div id="section4"></div>
+        <h2>Exploring the Table's Built-In Functionality</h2>
+        <p className='paragraph'>
+          This is found in the <a href="https://www.npmjs.com/package/mui-datatables">MUI Datatables documentation</a>
+           on the<strong> onFilterChange</strong> method.
+             As we read there, it's a callback function that triggers when filters have
+            changed:
+        </p>
+        <div>
+          <SyntaxComponent
+            text={` 
+            function(changedColumn: string, filterList: array, 
+            type: enum('checkbox', 'dropdown', 'multiselect', 'textField', 'custom', 'chip', 'reset'), 
+            changedColumnIndex, displayData) => void`}
+          />
+        </div>
+
+        <MDBSmoothScroll to="section5">
+          <MDBBtn rounded className="float-right" outline color="elegant">
+            <MDBIcon icon="arrow-down" />
+          </MDBBtn>
+        </MDBSmoothScroll>
+        <div style={{ paddingTop: "300px" }}></div>
+        <div id="section5"></div>
+      </Fade>
+    </div>
     </div>
   );
 }

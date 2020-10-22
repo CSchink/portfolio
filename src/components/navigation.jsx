@@ -4,7 +4,6 @@ import {
   MDBNavbarBrand,
   MDBNavbarNav,
   MDBNavItem,
-  MDBNavLink,
   MDBNavbarToggler,
   MDBCollapse,
   MDBDropdown,
@@ -12,13 +11,10 @@ import {
   MDBDropdownMenu,
   MDBDropdownItem,
   MDBIcon,
-  MDBLink,
 } from "mdbreact";
-import { BrowserRouter as Router } from "react-router-dom";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "mdbreact/dist/css/mdb.css";
-import { BreadcrumbsItem } from "react-breadcrumbs-dynamic";
 
 class Navigation extends Component {
   state = {
@@ -43,13 +39,13 @@ class Navigation extends Component {
           <MDBNavbarNav left>
             <MDBDropdown>
               <MDBDropdownToggle nav caret>
-                <div className="d-none d-md-inline text-white">Projects</div>
+                <div className="d-none d-md-inline text-white">Experience</div>
               </MDBDropdownToggle>
               <MDBDropdownMenu className="dropdown-default">
-                <MDBDropdownItem href="/projects/resume">
+                <MDBDropdownItem href="/projects/historylab">
                   History Lab
                 </MDBDropdownItem>
-                <MDBDropdownItem href="#!">Portfolio</MDBDropdownItem>
+                <MDBDropdownItem href="/resume">Portfolio</MDBDropdownItem>
               </MDBDropdownMenu>
             </MDBDropdown>
             <MDBDropdown>
@@ -57,7 +53,7 @@ class Navigation extends Component {
                 <div className="d-none d-md-inline text-white">Blog</div>
               </MDBDropdownToggle>
               <MDBDropdownMenu className="dropdown-default">
-                <MDBDropdownItem href="#!">Githug</MDBDropdownItem>
+                <MDBDropdownItem href="/blogdirectory">Githug</MDBDropdownItem>
                 <MDBDropdownItem href="#!">Another Action</MDBDropdownItem>
                 <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
                 <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
@@ -68,23 +64,10 @@ class Navigation extends Component {
                             <MDBNavLink to="/blog">Blog</MDBNavLink>
                         </MDBNavItem>
                         <MDBNavItem>
-                            <MDBNavLink to="/projects">Projects</MDBNavLink>
+                            <MDBNavLink to="/projects">Experience</MDBNavLink>
                         </MDBNavItem> */}
           </MDBNavbarNav>
           <MDBNavbarNav right>
-            <MDBNavItem>
-              {/* <MDBDropdown>
-                                    <MDBDropdownToggle nav caret>
-                                        <div className="d-none d-md-inline">Contact</div>
-                                    </MDBDropdownToggle>
-                                    <MDBDropdownMenu className="dropdown-default">
-                                        <MDBDropdownItem href="#!">Githug</MDBDropdownItem>
-                                        <MDBDropdownItem href="#!">Another Action</MDBDropdownItem>
-                                        <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
-                                        <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
-                                    </MDBDropdownMenu>
-                                </MDBDropdown> */}
-            </MDBNavItem>
             <MDBNavItem>
               <a
                 href="https://www.linkedin.com/in/corey-schink-35a64699/"
@@ -105,11 +88,6 @@ class Navigation extends Component {
                 <MDBIcon fab icon="github" size="lg" />
               </a>
             </MDBNavItem>
-            {/* <MDBNavItem>
-                                <MDBNavLink className="waves-effect waves-light" to="#!">
-                                    <MDBIcon fab icon="google-plus-g" />
-                                </MDBNavLink>
-                            </MDBNavItem> */}
           </MDBNavbarNav>
         </MDBCollapse>
       </MDBNavbar>

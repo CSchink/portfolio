@@ -9,8 +9,8 @@ const BackButton = ({ url }) => {
   }
   return (
     <div style={{ paddingTop: "10px" }}>
-      <MDBBtn outline color="black" rounded onClick={handleClick}>
-        <MDBIcon icon="arrow-circle-left" />
+      <MDBBtn size='sm' outline color="black" rounded onClick={handleClick}>
+      <MDBIcon icon="arrow-left" />
       </MDBBtn>
     </div>
   );
