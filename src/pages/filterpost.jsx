@@ -11,7 +11,7 @@ function FilterPost() {
       <Header
         section="section1"
         title="Building a Cascading Filter"
-        intro="Using Grenb's fantastic MUI Datatables to build hierarchical or cascading filters"
+        intro="Greg's MUI Datatables provide an excellent solution for developers requiring a sleek and responsive table design in their React project. One drawback is the lack of a cascading filter element. Join me on my quest to build one."
         src="https://i.pinimg.com/originals/e9/a8/5b/e9a85b5a3a7f83d86a85a4c348938bd5.png"
       />
       <BreadcrumbsItem
@@ -53,7 +53,7 @@ function FilterPost() {
         <div style={{ paddingTop: "300px" }}></div>
         <div id="section2"></div>
         <h2>
-        Cascading filters, also known as hierarchical filters, funnel user
+        <strong>Cascading filters, </strong>also known as hierarchical filters, funnel user
         selection based on incremental selection. The first filter
         limits the second to only those values that remain relevant for the search criteria. It is
         vital for user experience, especially when dealing with a large
@@ -107,8 +107,7 @@ function FilterPost() {
         <div id="section4"></div>
         <h2>Exploring the Table's Built-In Functionality</h2>
         <p className='paragraph'>
-          This is found in the <a href="https://www.npmjs.com/package/mui-datatables">MUI Datatables documentation</a>
-           on the<strong> onFilterChange</strong> method.
+          This is found in the<strong><a href="https://www.npmjs.com/package/mui-datatables">MUI Datatables documentation</a></strong>on the<strong> onFilterChange</strong> method.
              As we read there, it's a callback function that triggers when filters have
             changed:
         </p>

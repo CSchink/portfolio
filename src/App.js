@@ -17,6 +17,8 @@ import PortfolioPage from "./pages/portfoliopage";
 import Timeline from "./components/timeline";
 import BlogDirectory from "./components/blogdirectory";
 import GraphqlPage from "./pages/graphqlpage";
+import ArraysPost from "./pages/datastructurespost";
+import BigOpost from "./pages/bigOpost";
 
 function App() {
   return (
@@ -59,10 +61,13 @@ function App() {
         <Route exact path="/projects/resume" component={Timeline} />
         <Route exact path="/projects/wordpress" component={PortfolioPage} />
         <Route exact path="/projects" component={ProjectsPage} />
-        <Route path="/blog" component={BlogPage} />
-        <Route exact path="/cascadingfilter" component={FilterPost} />
+        <Route exact path="/blog" component={BlogPage} />
+        <Route exact path="/projects/cascadingfilter" component={FilterPost} />
         <Route exact path="/projects/graphql" component={GraphqlPage} />
-        <Route path="/blogdirectory" component={BlogDirectory} />
+        <Route exact path="/blogdirectory" component={BlogDirectory} />
+        <Route exact path="/blog/datastructures" component={ArraysPost} />
+        <Route exact path="/blog/bigonotation" component={BigOpost} />
+        
       </Switch>
     </div>
   );

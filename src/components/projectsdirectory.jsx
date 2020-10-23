@@ -8,14 +8,6 @@ class ProjectsDirectory extends Component {
     this.state = {
       section: [
         {
-          title: "Resume",
-          imageUrl:
-            "https://scontent.flhr4-2.fna.fbcdn.net/v/t1.0-9/49132474_2138775929476813_6892757537473429504_n.jpg?_nc_cat=111&_nc_sid=174925&_nc_ohc=SgmM7udBza8AX-DiRBM&_nc_ht=scontent.flhr4-2.fna&oh=0d14d24c77a1b43b1a28f5e6a8fab20e&oe=5FB06C92",
-          size: "large",
-          id: 1,
-          linkUrl: "/projects/resume",
-        },
-        {
           title: "History Lab",
           imageUrl: "https://i.morioh.com/67feeaf72f.png",
           size: "large",
@@ -31,12 +23,20 @@ class ProjectsDirectory extends Component {
           linkUrl: "/projects/wordpress",
         },
         {
+          title: "Resume",
+          imageUrl:
+            "https://scontent.flhr4-2.fna.fbcdn.net/v/t1.0-9/49132474_2138775929476813_6892757537473429504_n.jpg?_nc_cat=111&_nc_sid=174925&_nc_ohc=SgmM7udBza8AX-DiRBM&_nc_ht=scontent.flhr4-2.fna&oh=0d14d24c77a1b43b1a28f5e6a8fab20e&oe=5FB06C92",
+          size: "large",
+          id: 1,
+          linkUrl: "/projects/resume",
+        },
+        {
           title: "Cascading Filters",
           imageUrl:
             "https://i.pinimg.com/originals/e9/a8/5b/e9a85b5a3a7f83d86a85a4c348938bd5.png",
           size: "large",
           id: 4,
-          linkUrl: "/cascadingfilter",
+          linkUrl: "/projects/cascadingfilter",
         },
         // {
         //   title: "Machine Learning",
@@ -56,7 +56,7 @@ class ProjectsDirectory extends Component {
 
         {
           title: "Social Media App",
-        //   subtitle: "with JavaScript",
+          //   subtitle: "with JavaScript",
           imageUrl:
             "https://www.freecodecamp.org/news/content/images/size/w2000/2020/04/cover-3.png",
           size: "large",

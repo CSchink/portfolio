@@ -7,7 +7,7 @@ import { MDBCard, MDBJumbotron } from "mdbreact";
 
 const HomePage = () => (
   <MDBCard>
-    <MDBJumbotron fluid>
+    <MDBJumbotron fluid >
       <h1 className="h1 display-3">Welcome!</h1>
       <hr />
       <p>

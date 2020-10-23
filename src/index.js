@@ -6,6 +6,10 @@ import {BrowserRouter} from 'react-router-dom'
 import * as serviceWorker from './serviceWorker';
 import {ThroughProvider} from 'react-through'
 import ScrollToTop from '../src/components/scrolltop'
+
+import "./pages/resume-styles.scss";
+
+
 ReactDOM.render(
   <ThroughProvider>
     <BrowserRouter>

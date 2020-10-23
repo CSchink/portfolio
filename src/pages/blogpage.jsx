@@ -18,7 +18,7 @@ import BackButton from "../components/backbutton";
 function BlogPage() {
   let history = useHistory();
   return (
-    <div> 
+    <div>
       {/* <Navigation /> */}
       <BreadcrumbsItem
         to={"/blog"}
@@ -38,20 +38,21 @@ function BlogPage() {
                   src="https://hackernoon.com/drafts/im4m30bb.png"
                   alt=""
                 />
-                <a href="#!">
+                <a href="/blog/datastructures">
                   <MDBMask overlay="white-slight" />
                 </a>
               </MDBView>
             </MDBCol>
             <MDBCol lg="7">
               <h3 className="font-weight-bold mb-3 p-0">
-                <strong>Datastructures and Algorithms</strong>
+                <strong>Datastructures: Arrays</strong>
               </h3>
               <p>
-                Greg's MUI Datatables provide an excellent solution for
-                developers requiring a sleek and responsive table design in
-                their React project. One drawback is the lack of a cascading
-                filter element. Join me on my quest to build one.
+                Arrays are among the oldest data structures in the relatively
+                short history of computer science. However, like all data
+                structures, they have their strengths and their weaknesses. This
+                post begins a series on data structures and algorithms, in the
+                pursuit of technical expertise when programming.
               </p>
 
               <MDBBtn
@@ -60,7 +61,7 @@ function BlogPage() {
                 size="md"
                 className="waves-light "
                 onClick={() => {
-                  history.push("/cascadingfilter");
+                  history.push("/blog/datastructures");
                 }}
               >
                 Read more
@@ -71,11 +72,14 @@ function BlogPage() {
           <MDBRow>
             <MDBCol lg="7">
               <h3 className="font-weight-bold mb-3 p-0">
-                <strong>React Class Components vs Hooks</strong>
+                <strong>Big O Notation pt. 1</strong>
               </h3>
               <p>
-                In this post I highlight one effective way I've found to quickly
-                and easily edit data within MUI Datatables
+                If we want to understand data structures and algorithms we can't
+                avoid Big O Notation and a bit of calculus. In this post I give
+                a brief introduction to the topics of Big O, time complexity,
+                and asymptotic bounds. I also briefly introduce liner and
+                constant time complexity.
               </p>
 
               <MDBBtn
@@ -84,7 +88,7 @@ function BlogPage() {
                 outline
                 className="waves-light "
                 onClick={() => {
-                  history.push("/new-location");
+                  history.push("/blog/bigonotation");
                 }}
               >
                 Read more
@@ -94,10 +98,10 @@ function BlogPage() {
               <MDBView className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>
                 <img
                   className="img-fluid"
-                  src="https://rangleio.ghost.io/content/images/2019/04/hook_desktop_16_9.png"
+                  src="https://cdn-media-1.freecodecamp.org/images/1*KfZYFUT2OKfjekJlCeYvuQ.jpeg"
                   alt=""
                 />
-                <a href="#!">
+                <a href="/blog/bigonotation">
                   <MDBMask overlay="white-slight" />
                 </a>
               </MDBView>
@@ -131,7 +135,6 @@ function BlogPage() {
                 size="md"
                 className="waves-light"
                 outline
-                
                 onClick={() => {
                   history.push("/new-location");
                 }}
