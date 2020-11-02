@@ -37,7 +37,7 @@ class Navigation extends Component {
         <MDBNavbarToggler onClick={this.toggleCollapse} />
         <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
           <MDBNavbarNav left>
-            <MDBDropdown>
+            {/* <MDBDropdown>
               <MDBDropdownToggle nav caret>
                 <div className="d-none d-md-inline text-white">Experience</div>
               </MDBDropdownToggle>
@@ -58,7 +58,7 @@ class Navigation extends Component {
                 <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
                 <MDBDropdownItem href="#!">Something else here</MDBDropdownItem>
               </MDBDropdownMenu>
-            </MDBDropdown>
+            </MDBDropdown> */}
 
             {/* <MDBNavItem>
                             <MDBNavLink to="/blog">Blog</MDBNavLink>

@@ -14,22 +14,22 @@ class ProjectsDirectory extends Component {
           id: 2,
           linkUrl: "/projects/historylab",
         },
-        {
-          title: "WordPress & React",
-          imageUrl:
-            "https://camo.githubusercontent.com/64906f3cafcc38a760b6528f4c317df717c1299d/68747470733a2f2f736e6970636172742e636f6d2f6d656469612f3230333837322f72656163742d776f726470726573732d726573742d6170692e6a7067",
-          size: "large",
-          id: 3,
-          linkUrl: "/projects/wordpress",
-        },
-        {
-          title: "Resume",
-          imageUrl:
-            "https://scontent.flhr4-2.fna.fbcdn.net/v/t1.0-9/49132474_2138775929476813_6892757537473429504_n.jpg?_nc_cat=111&_nc_sid=174925&_nc_ohc=SgmM7udBza8AX-DiRBM&_nc_ht=scontent.flhr4-2.fna&oh=0d14d24c77a1b43b1a28f5e6a8fab20e&oe=5FB06C92",
-          size: "large",
-          id: 1,
-          linkUrl: "/projects/resume",
-        },
+        // {
+        //   title: "WordPress & React",
+        //   imageUrl:
+        //     "https://camo.githubusercontent.com/64906f3cafcc38a760b6528f4c317df717c1299d/68747470733a2f2f736e6970636172742e636f6d2f6d656469612f3230333837322f72656163742d776f726470726573732d726573742d6170692e6a7067",
+        //   size: "large",
+        //   id: 3,
+        //   linkUrl: "/projects/wordpress",
+        // },
+        // {
+        //   title: "Resume",
+        //   imageUrl:
+        //     "https://scontent.flhr4-2.fna.fbcdn.net/v/t1.0-9/49132474_2138775929476813_6892757537473429504_n.jpg?_nc_cat=111&_nc_sid=174925&_nc_ohc=SgmM7udBza8AX-DiRBM&_nc_ht=scontent.flhr4-2.fna&oh=0d14d24c77a1b43b1a28f5e6a8fab20e&oe=5FB06C92",
+        //   size: "large",
+        //   id: 1,
+        //   linkUrl: "/projects/resume",
+        // },
         {
           title: "Cascading Filters",
           imageUrl:
@@ -45,14 +45,14 @@ class ProjectsDirectory extends Component {
         //   id: 1,
         //   linkUrl: "/projects/portfolio",
         // },
-        // {
-        //   title: "Styling with CSS",
-        //   imageUrl:
-        //     "https://www.codespot.org/assets/css.jpg",
-        //   size: "large",
-        //   id: 5,
-        //   linkUrl: "/projects/resume",
-        // },
+        {
+          title: "Styling with CSS",
+          imageUrl:
+            "https://www.codespot.org/assets/css.jpg",
+          size: "large",
+          id: 5,
+          linkUrl: "/projects/css",
+        },
 
         {
           title: "Social Media App",

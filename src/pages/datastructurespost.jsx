@@ -38,7 +38,7 @@ function ArraysPost() {
             given circumstance. As Linus Torvalds once said:
           </p>
           <div style={{ paddingTop: "10px" }} />
-          <div style={{ width: "600px", margin: "auto" }}>
+          <div style={{ width: "700px", margin:'auto'}}>
             <Card fluid style={{ fontStyle: "italic" }}>
               <Card.Content>
                 <p>
@@ -108,7 +108,7 @@ function ArraysPost() {
             region of the chart. It's not the best but, according to Wikipedia
             it's still one of the best possible outcomes under these situations:
           </p>
-          <div style={{ width: "600px", margin: "auto" }}>
+          <div style={{ width: "700px", margin: "auto" }}>
             <Card fluid style={{ fontStyle: "italic" }}>
               <Card.Content>
                 <p>
