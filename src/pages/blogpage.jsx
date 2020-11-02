@@ -121,7 +121,7 @@ function BlogPage() {
                 </a>
               </MDBView>
             </MDBCol>
-            <MDBCol lg="7">
+            {/* <MDBCol lg="7">
               <h3 className="font-weight-bold mb-3 p-0">
                 <strong>How I learned to code</strong>
               </h3>
@@ -141,7 +141,7 @@ function BlogPage() {
               >
                 Read more
               </MDBBtn>
-            </MDBCol>
+            </MDBCol> */}
           </MDBRow>
         </MDBCardBody>
         <BackButton url="/home" />

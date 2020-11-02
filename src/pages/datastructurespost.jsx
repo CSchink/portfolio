@@ -38,7 +38,7 @@ function ArraysPost() {
             given circumstance. As Linus Torvalds once said:
           </p>
           <div style={{ paddingTop: "10px" }} />
-          <div style={{ width: "700px", margin:'auto'}}>
+          <div >
             <Card fluid style={{ fontStyle: "italic" }}>
               <Card.Content>
                 <p>
@@ -108,7 +108,7 @@ function ArraysPost() {
             region of the chart. It's not the best but, according to Wikipedia
             it's still one of the best possible outcomes under these situations:
           </p>
-          <div style={{ width: "700px", margin: "auto" }}>
+          <div>
             <Card fluid style={{ fontStyle: "italic" }}>
               <Card.Content>
                 <p>
@@ -126,18 +126,7 @@ function ArraysPost() {
             </Card>
           </div>
 
-          <Header as="h2">Array Subtypes</Header>
-          <p>
-            There are two types of arrays - dynamic and static. Static arrays
-            demand the programmer to identify ahead of time the number of
-            elements that the array will contain. This is determined when the
-            program is compiled, and cannot be changed.
-          </p>
-          <p>
-            Obviously, if we want user functionality, static arrays will not
-            suffice. However, static arrays are best for
-          </p>
-          <div style={{ paddingTop: "20px" }} />
+         
         </Segment>
       </Container>
     </div>
