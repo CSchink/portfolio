@@ -109,7 +109,7 @@ function BlogPage() {
           </MDBRow>
           <hr className="my-5" />
           <MDBRow>
-            <MDBCol lg="5">
+            {/* <MDBCol lg="5">
               <MDBView className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>
                 <img
                   className="img-fluid"
@@ -120,7 +120,7 @@ function BlogPage() {
                   <MDBMask overlay="white-slight" />
                 </a>
               </MDBView>
-            </MDBCol>
+            </MDBCol> */}
             {/* <MDBCol lg="7">
               <h3 className="font-weight-bold mb-3 p-0">
                 <strong>How I learned to code</strong>

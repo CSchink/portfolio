@@ -46,7 +46,7 @@ class ProjectsDirectory extends Component {
         //   linkUrl: "/projects/portfolio",
         // },
         {
-          title: "Styling with CSS",
+          title: "Portfolio with HTML & CSS",
           imageUrl:
             "https://www.codespot.org/assets/css.jpg",
           size: "large",
