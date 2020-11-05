@@ -5,14 +5,14 @@ import { MDBCard, MDBJumbotron } from "mdbreact";
 
 const HomePage = () => (
   <MDBCard>
-    <MDBJumbotron fluid >
+    <MDBJumbotron fluid>
       <div className="container">
-      <h1 className="h1 display-3">Welcome!</h1>
-      <hr />
-      <p>
-          This portfolio showcases my knowledg and practical
-          experience in both front and back end web development.
-      </p>
+        <h1 className="h1 display-3">Welcome!</h1>
+        <hr />
+        <p>
+          This portfolio highlights my knowledge and practical experience in
+          both front and back end web development.
+        </p>
       </div>
     </MDBJumbotron>
     <div className="projectspage">
