@@ -6,8 +6,12 @@ import {BrowserRouter} from 'react-router-dom'
 import * as serviceWorker from './serviceWorker';
 import {ThroughProvider} from 'react-through'
 import ScrollToTop from '../src/components/scrolltop'
-
-import "./pages/resume-styles.scss";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import "bootstrap-css-only/css/bootstrap.min.css";
+import "mdbreact/dist/css/mdb.css";
+import "semantic-ui-css/semantic.min.css";
+// import "./pages/resume-styles.scss";
+import "./pages/homepage.styles.scss";
 
 
 ReactDOM.render(

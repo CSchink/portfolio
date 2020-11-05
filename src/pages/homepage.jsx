@@ -1,7 +1,5 @@
 import React from "react";
 import Directory from "../components/directory";
-import "./homepage.styles.scss";
-import "./projectspage-styles.scss";
 import Fade from "react-reveal/Fade";
 import { MDBCard, MDBJumbotron } from "mdbreact";
 

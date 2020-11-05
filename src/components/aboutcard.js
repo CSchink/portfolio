@@ -4,11 +4,11 @@ import { MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBRow, 
 const AboutCard = () => {
   return (
     <MDBRow>
-      <MDBCol md='4'>
+      <MDBCol md='10'>
         <MDBCard>
           <MDBCardImage
             top
-            src='https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2821%29.jpg'
+            src={require('../assets/biltmorepic.jpg')}
             overlay='white-slight'
             hover
             waves

@@ -4,7 +4,7 @@ import { BreadcrumbsItem } from "react-breadcrumbs-dynamic";
 import Header from "../components/header";
 import Fade from "react-reveal/Fade";
 import SyntaxComponent from "../components/syntax";
-import "./resume-styles.scss";
+
 function FilterPost() {
   return (
     <div>

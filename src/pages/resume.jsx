@@ -1,10 +1,9 @@
 import React from "react";
-import "./resume-styles.scss";
+// import "./resume-styles.scss";
 import "primereact/resources/themes/saga-blue/theme.css";
 import SyntaxComponent from "../components/syntax";
 import Fade from "react-reveal/Fade";
 import { BreadcrumbsItem } from "react-breadcrumbs-dynamic";
-import "../styles/navigation.css";
 import { MDBBtn, MDBCard, MDBIcon, MDBSmoothScroll } from "mdbreact";
 import Header from "../components/header";
 import BackButton from "../components/backbutton";

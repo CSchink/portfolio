@@ -1,8 +1,6 @@
 import React from "react";
 import { Segment, Container, Header, Image, Card } from "semantic-ui-react";
-import "semantic-ui-css/semantic.min.css";
 import { BreadcrumbsItem } from "react-breadcrumbs-dynamic";
-import "./resume-styles.scss";
 import BackButton from "../components/backbutton";
 import Fade from "react-reveal/Fade";
 
