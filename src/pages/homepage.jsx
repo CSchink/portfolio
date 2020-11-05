@@ -10,8 +10,8 @@ const HomePage = () => (
       <hr />
       <p>
         <strong>
-          This single page web app showcases my knowledge (blog) and practical
-          experience (projects) in both front and back end web development.
+          This portfolio showcases my knowledg and practical
+          experience in both front and back end web development.
         </strong>
       </p>
     </MDBJumbotron>
