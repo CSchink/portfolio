@@ -1,5 +1,5 @@
 import React from "react";
-// import "./resume-styles.scss";
+import "./homepage.styles.scss";
 import "primereact/resources/themes/saga-blue/theme.css";
 import SyntaxComponent from "../components/syntax";
 import Fade from "react-reveal/Fade";

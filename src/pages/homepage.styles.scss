@@ -19,6 +19,14 @@ li {
   // background-color: white;
 }
 
+.column {
+  column-count: 2;
+  margin-top: auto;
+  clear: both;
+  display: flex;
+  align-self: start;
+}
+
 .centerimage {
   display: block;
   margin-right: auto;
