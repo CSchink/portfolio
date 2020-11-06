@@ -94,7 +94,7 @@ const Resume = () => (
           <div style={{ paddingTop: "300px" }}></div>
           <div id="section2">
             {/* <div style={{ paddingTop: '350px' }} /> */}
-            <h3>User Authentication</h3>
+            
             <p className="paragraph">
               The login functionality first takes a simple form component. Upon
               form submission the Express server requests the relevant user
