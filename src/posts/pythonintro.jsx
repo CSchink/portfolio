@@ -33,12 +33,12 @@ function PythonIntro() {
       <p>Slicing does not mutate the array</p>
       <SyntaxComponent
         text={`
-                    list = ['man', 2.5, 'angry', 'true', [1, 2, 3]]
-                    new_list = list
-                    new_list[0] = 'woman'
-                    print(list)
-                    print(new_list)
-                    `}
+            list = ['man', 2.5, 'angry', 'true', [1, 2, 3]]
+            new_list = list
+            new_list[0] = 'woman'
+            print(list)
+            print(new_list)
+            `}
       />
       <h2>Matrix</h2>
       <p></p>
@@ -51,6 +51,16 @@ function PythonIntro() {
           ]
             `}
       />
+      <p></p>
+      <h2>Sets</h2>
+      <h3>difference</h3>
+      <p></p>
+      <SyntaxComponent text={``} />
+      <h3>difference_update</h3>
+      <p></p>
+      <h3>issubset and issuperset</h3>
+      <p></p>
+      <h3>Docstrings and Help</h3>
       <p></p>
     </div>
   );
