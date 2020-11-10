@@ -62,6 +62,8 @@ function PythonIntro() {
       <p></p>
       <h3>Docstrings and Help</h3>
       <p></p>
+      <h3>*args and **kwargs</h3>
+      <p>Seems similar to the spread operator in JavaScript</p>
     </div>
   );
 }

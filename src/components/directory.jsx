@@ -9,8 +9,7 @@ class Directory extends Component {
       section: [
         {
           title: "Experience",
-          imageUrl:
-            "https://www.brightnetwork.co.uk/media/ckeditor/2017/03/09/markus-spiske-207946-1.jpg",
+          imageUrl: require("../assets/experiencepic.jpg"),
           id: 1,
           linkUrl: "/projects",
         },
