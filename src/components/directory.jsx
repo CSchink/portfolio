@@ -8,7 +8,7 @@ class Directory extends Component {
     this.state = {
       section: [
         {
-          title: "Experience",
+          title: "Projects",
           imageUrl: require("../assets/experiencepic.jpg"),
           id: 1,
           linkUrl: "/projects",
