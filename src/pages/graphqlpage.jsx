@@ -100,7 +100,7 @@ const GraphqlPage = () => (
           <img
             alt=""
             className="centerimage"
-            src={require("../assets/graphqlregister.PNG")}
+            src={require("../assets/cssportfolio1.PNG")}
           />
           </Fade>
           <Fade right>
