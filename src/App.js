@@ -19,6 +19,7 @@ import BlogDirectory from "./components/blogdirectory";
 import GraphqlPage from "./pages/graphqlpage";
 import ArraysPost from "./pages/datastructurespost";
 import BigOpost from "./pages/bigOpost";
+import CopyWritePage from "./pages/copywritecss";
 
 function App() {
   return (
@@ -67,6 +68,7 @@ function App() {
         <Route exact path="/blogdirectory" component={BlogDirectory} />
         <Route exact path="/blog/datastructures" component={ArraysPost} />
         <Route exact path="/blog/bigonotation" component={BigOpost} />
+        <Route exact path="/projects/css" component={CopyWritePage} />
         
       </Switch>
     </div>
