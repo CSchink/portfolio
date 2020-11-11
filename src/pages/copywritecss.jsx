@@ -31,26 +31,37 @@ function CopyWritePage() {
         intro="A social media app utilizing MongoDB, Apollo, Graphql, Express and React"
         src="https://www.codespot.org/assets/css.jpg"
       />
-<Fade right>
-          <h2>The Final Result</h2>
-          <img
-            alt=""
-            className="centerimage"
-            src={require("../assets/portfoliohomepage.PNG")}
-          />
 
-          <div className='column'>
+      {/* Section One  */}
+      <div className="container">
+        <div style={{ paddingTop: "300px" }}></div>
+        <div id="section1">
+          <Fade right>
+            <h2>The Final Result</h2>
+            <div
+              style={{ textAlign: "center", width: "100%", fontSize: "20px" }}
+            >
+              <a href="https://infallible-pare-495ee5.netlify.app/index.html">
+                Check it out on Netlify
+              </a>
+            </div>
+            <img
+              alt=""
+              className="centerimage"
+              src={require("../assets/portfoliohomepage.PNG")}
+            />
             <Fade left>
               <MDBSmoothScroll to="section2">
                 <MDBBtn rounded className="float-right" outline color="elegant">
                   <MDBIcon icon="arrow-down" />
                 </MDBBtn>
               </MDBSmoothScroll>
-              <a href="https://infallible-pare-495ee5.netlify.app/index.html">Check it out</a>
             </Fade>
-          </div>
-        </Fade>
+          </Fade>
+        </div>
 
+        {/* End of Container */}
+      </div>
     </MDBCard>
   );
 }
