@@ -16,7 +16,7 @@ const Resume = () => (
       intro="A comprehensive database for students of science and history"
       src="https://i.morioh.com/67feeaf72f.png"
     />
-          <div style={{ paddingTop: "300px" }}></div>
+    <div style={{ paddingTop: "300px" }}></div>
 
     <div id="section1">
       <BreadcrumbsItem
@@ -35,24 +35,24 @@ const Resume = () => (
         History Lab
       </BreadcrumbsItem>
 
-      <div className="container ">
-      
-
+      <div className="container">
         <Fade right>
-          <div>
-            <h3>Project Overview</h3>
+          <div className="mycard">
+            <div>
+              <h3>Project Overview</h3>
 
-            <p>
-              As something of a history nerd I began this project with a simple
-              goal in mind - create a place where I can catalog a vast amount of
-              data, spanning centuries, into an easy-to-retrieve system
-            </p>
-            <p className="paragraph">
-              History Lab has been incarnated in three different forms over the
-              course of my 3-year learning career.
-            </p>
-          </div>
-          <div>
+              <p>
+                As something of a history nerd I began this project with a
+                simple goal in mind - create a place where I can catalog a vast
+                amount of data, spanning centuries, into an easy-to-retrieve
+                system
+              </p>
+              <p className="paragraph">
+                History Lab has been incarnated in three different forms over
+                the course of my 3-year learning career.
+              </p>
+            </div>
+
             <ol>
               <li>
                 In its first form it was a simple card-display system, mapping
@@ -78,11 +78,11 @@ const Resume = () => (
                 and notifications
               </li>
             </ol>
-          </div>
-          <div>
+
+            <div></div>
             <Fade left>
               <MDBSmoothScroll to="section2">
-                <MDBBtn rounded className="float-right" outline color="elegant">
+                <MDBBtn rounded className="float-right" outline color="white">
                   <MDBIcon icon="arrow-down" />
                 </MDBBtn>
               </MDBSmoothScroll>
@@ -94,12 +94,13 @@ const Resume = () => (
           <div style={{ paddingTop: "300px" }}></div>
           <div id="section2">
             {/* <div style={{ paddingTop: '350px' }} /> */}
-            
-            <p className="paragraph">
-              The login functionality first takes a simple form component. Upon
-              form submission the Express server requests the relevant user
-              documents from MongoDB.
-            </p>
+            <div>
+              <h2>
+                The login functionality first takes a simple form component.
+                Upon form submission the Express server requests the relevant
+                user documents from MongoDB.
+              </h2>
+            </div>
             <div className="column">
               <img
                 alt=""
@@ -164,7 +165,7 @@ const Resume = () => (
             <div style={{ paddingTop: "300px" }}></div>
             <div id="section4"></div>
             <Fade left>
-              <p>Finally, the profile page is displayed.</p>
+              <h2>Finally, the profile page is displayed.</h2>
               <img
                 alt=""
                 className="centerimage"
@@ -181,7 +182,7 @@ const Resume = () => (
           </Fade>
           <div style={{ paddingTop: "300px" }}></div>
           <div id="section5"></div>
-          <p>...and the news feed is populated</p>
+          <h2>...and the news feed is populated</h2>
 
           <div>
             <img
@@ -192,35 +193,7 @@ const Resume = () => (
           </div>
 
           <hr />
-          <div>
-            {/* <SyntaxComponent text={`import React from 'react'
-import { hasToken } from '../util/tokenutil';
-import history from '../util/historyutil';
-
-const AuthContext = React.createContext()
-function AuthProvider(props) {
-
-  const [loggedIn, setloggedIn] = React.useState(hasToken());
-  const login = (token) => { 
-    sessionStorage.setItem("token", token)
-    setloggedIn(true)
-    
-    // history.push('/data')
-    } 
-  const logout = () => { 
-      setloggedIn(false)
-      // sessionStorage.removeItem('token');
-      sessionStorage.clear();
-
-    //   history.push('/') 
-} 
-  return (
-    <AuthContext.Provider value={{loggedIn, login, logout}} {...props} />
-  )
-}
-const useAuth = () => React.useContext(AuthContext)
-export {AuthProvider, useAuth}`} /> */}
-          </div>
+          <div></div>
           <MDBSmoothScroll to="section6">
             <MDBBtn rounded className="float-right" outline color="elegant">
               <MDBIcon icon="arrow-down" />
@@ -244,12 +217,6 @@ export {AuthProvider, useAuth}`} /> */}
             the tables is recorded in MongoDB for use with the notifications
             system and news feed.
           </p>
-          <SyntaxComponent
-            text={`export async function newNotifications(request) {
-            return instance.post("/newnotifications", request, {
-                headers: { authorization: token() },
-            });`}
-          />
         </Fade>
       </div>
     </div>

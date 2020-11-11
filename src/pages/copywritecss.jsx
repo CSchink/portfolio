@@ -27,8 +27,8 @@ function CopyWritePage() {
       </BreadcrumbsItem>
       <Header
         section="section1"
-        title="Social Media App"
-        intro="A social media app utilizing MongoDB, Apollo, Graphql, Express and React"
+        title="Portfolio with CSS and HTML"
+        intro="A mock copywriting portfolio that includes its own Bootstrap library complete with animations, cards, containers, margins and more!"
         src="https://www.codespot.org/assets/css.jpg"
       />
 
@@ -71,6 +71,7 @@ function CopyWritePage() {
                 animations
               </h2>
             </div>
+            <div style={{ paddingTop: "50px" }} />
             <Fade right>
               <MDBSmoothScroll to="section3">
                 <MDBBtn rounded className="float-right" outline color="elegant">
@@ -85,7 +86,7 @@ function CopyWritePage() {
         <div id="section3"></div>
 
         <Fade right>
-          <h2>For example the following display:</h2>
+          <h2 style={{ paddingBottom: "20px" }}>For example the following display:</h2>
           <img
             alt=""
             className="centerimage"
@@ -101,10 +102,11 @@ function CopyWritePage() {
 
         <div style={{ paddingTop: "300px" }}></div>
         <div id="section4"></div>
-        <h2>Utilizes a basic card:</h2>
+        <Fade right>
+          <h2 style={{ paddingBottom: "20px" }}>Utilizes a basic card:</h2>
 
-        <SyntaxComponent
-          text={`
+          <SyntaxComponent
+            text={`
         .card {
             background-color: #fff;
             color: #333;
@@ -114,20 +116,22 @@ function CopyWritePage() {
             margin: 10px;
           }
          `}
-        />
+          />
+          <div style={{ paddingTop: "50px" }} />
+          <MDBSmoothScroll to="section5">
+            <MDBBtn rounded className="float-right" outline color="elegant">
+              <MDBIcon icon="arrow-down" />
+            </MDBBtn>
+          </MDBSmoothScroll>
+        </Fade>
+        <div style={{ paddingTop: "300px" }}></div>
+        <Fade right>
+          <div id="section5">
+            <h2 style={{ paddingBottom: "20px" }}>And a container and grid styling of:</h2>
+          </div>
 
-        <MDBSmoothScroll to="section5">
-          <MDBBtn rounded className="float-right" outline color="elegant">
-            <MDBIcon icon="arrow-down" />
-          </MDBBtn>
-        </MDBSmoothScroll>
-        <div style={{ paddingTop: "200px" }}></div>
-        <div id="section5">
-          <h2>And a container and grid styling of:</h2>
-        </div>
-
-        <SyntaxComponent
-          text={`
+          <SyntaxComponent
+            text={`
         .container {
             max-width: 1100px;
             margin: 0 auto;
@@ -143,16 +147,18 @@ function CopyWritePage() {
             height: 100%;
           }
           `}
-        />
-        <MDBSmoothScroll to="section7">
-          <MDBBtn rounded className="float-right" outline color="elegant">
-            <MDBIcon icon="arrow-down" />
-          </MDBBtn>
-        </MDBSmoothScroll>
-        <div style={{ paddingTop: "200px" }}></div>
+          />
+          <div style={{paddingTop:'50px'}}/>
+          <MDBSmoothScroll to="section7">
+            <MDBBtn rounded className="float-right" outline color="elegant">
+              <MDBIcon icon="arrow-down" />
+            </MDBBtn>
+          </MDBSmoothScroll>
+        </Fade>
+        <div style={{ paddingTop: "300px" }}></div>
         <div id="section7">
           <Fade right>
-            <h2>
+            <h2 style={{ paddingBottom: "20px" }}>
               And all of the animations utilize @keyframe for simple yet elegant
               effectiveness:
             </h2>
@@ -168,6 +174,7 @@ function CopyWritePage() {
                 }
         }`}
             />
+            <div style={{paddingTop:'50px'}}/>
             <MDBSmoothScroll to="section8">
               <MDBBtn rounded className="float-right" outline color="elegant">
                 <MDBIcon icon="arrow-down" />
@@ -176,23 +183,22 @@ function CopyWritePage() {
           </Fade>
         </div>
 
-        <div style={{ paddingTop: "200px" }}></div>
+        <div style={{ paddingTop: "300px" }}></div>
         <div id="section8">
           <Fade left>
-            <div className="mycard">
-                <h2>Finally, media queries ensure that display is adjusted for all ports, from tablets </h2>
-            </div>
-            <SyntaxComponent text={`
+            <h2 style={{ paddingBottom: "20px" }}>
+              Finally, media queries ensure that display is adjusted for all
+              ports, from tablets{" "}
+            </h2>
+
+            <SyntaxComponent
+              text={`
             @media (max-width: 768px) {
                 .grid,
-                .showcase .grid,
-                .stats .grid,
-                .cli .grid,
-                .cloud .gridm {
+                .showcase .grid {
                   grid-template-columns: 1fr;
                   grid-template-rows: 1fr;
                 }
-              
                 .showcase {
                   height: auto;
                 }
@@ -204,25 +210,23 @@ function CopyWritePage() {
                   justify-self: center;
                   margin: auto;
                 }
-                .cli .grid > *:first-child {
-                  grid-column: 1;
-                  grid-row: 1;
-                }
               }
-            `}/>
+            `}
+            />
           </Fade>
           <MDBSmoothScroll to="section9">
-          <MDBBtn rounded className="float-right" outline color="elegant">
-                <MDBIcon icon="arrow-down" />
-              </MDBBtn>
-            </MDBSmoothScroll>
+            <MDBBtn rounded className="float-right" outline color="elegant">
+              <MDBIcon icon="arrow-down" />
+            </MDBBtn>
+          </MDBSmoothScroll>
         </div>
 
+        <div style={{ paddingTop: "220px" }}></div>
+        <div id="section9" style={{paddingBottom:'100px'}}>
+          <Fade right>
+            <h2 style={{ paddingBottom: "20px", fontStyle:'italic'}}>...to mobile</h2>
 
-        <div style={{ paddingTop: "200px" }}></div>
-        <div id="section9">
-            <div className="mycard"><h2>to mobile</h2></div>
-        <SyntaxComponent
+            <SyntaxComponent
               text={`          
           /* Mobile */
           
@@ -240,7 +244,8 @@ function CopyWritePage() {
           }
           `}
             />
-        <BackButton url="/projects" />
+            <BackButton url="/projects" />
+          </Fade>
         </div>
         {/* End of Container */}
       </div>
