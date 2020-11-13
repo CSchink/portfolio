@@ -30,6 +30,7 @@ function CopyWritePage() {
         title="Portfolio with CSS and HTML"
         intro="A mock copywriting portfolio that includes its own Bootstrap library complete with animations, cards, containers, margins and more!"
         src="https://www.codespot.org/assets/css.jpg"
+        demo="https://infallible-pare-495ee5.netlify.app/index.html"
       />
 
       {/* Section One  */}

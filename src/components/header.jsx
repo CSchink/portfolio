@@ -52,9 +52,19 @@ class Header extends React.Component {
 
                   <MDBSmoothScroll to={this.props.section}>
                     <MDBBtn outline color="white">
-                      Read On
+                      Read More
                     </MDBBtn>
                   </MDBSmoothScroll>
+
+                  <MDBBtn
+                    tag="a"
+                    target="_blank"
+                    href={this.props.demo}
+                    outline
+                    color="white"
+                  >
+                    Check Out the Demo
+                  </MDBBtn>
                 </MDBAnimation>
               </MDBCol>
 
@@ -63,7 +73,7 @@ class Header extends React.Component {
                   <img
                     src={this.props.src}
                     alt=""
-                    style={{opacity: '.8'}}
+                    style={{ opacity: ".8" }}
                     className="img-fluid"
                   />
                 </MDBAnimation>

@@ -64,6 +64,47 @@ function PythonIntro() {
       <p></p>
       <h3>*args and **kwargs</h3>
       <p>Seems similar to the spread operator in JavaScript</p>
+      <h3>Object Oriented Programming</h3>
+      <p>
+        Class object attributes do not change accross specific instances of that
+        object. Attributes, on the other hand, do change.
+      </p>
+      <h3>Encapsulation</h3>
+      <p>
+        Encapsulation is one of the fundamental concepts in object-oriented
+        programming (OOP). It describes the idea of wrapping data and the
+        methods that work on data within one unit. This puts restrictions on
+        accessing variables and methods directly and can prevent the accidental
+        modification of data. To prevent accidental change, an object’s variable
+        can only be changed by an object’s method. Those types of variables are
+        known as private variable.
+        https://www.geeksforgeeks.org/encapsulation-in-python/
+      </p>
+      <h3>Abstraction</h3>
+      <p>
+        Abstraction is the manner in which methods and built-in functions are
+        provided to the user.
+      </p>
+      <h4>Private versus Public variables</h4>
+      <p>
+        In Java variables can be explicitly declared private, whereas in Python
+        an underscore is the conventional way of declaring that a variable is
+        private.
+      </p>
+      <h3>Inheritance</h3>
+      <p>
+        Inheritance is the way in which classes pass their properties and
+        attributes onto their children.
+      </p>
+      <h3>Polymorphism</h3>
+
+      <h3>Pure Functions</h3>
+      <p>Rules</p>
+      <ul>
+        <li>No Side Effects</li>
+        <li>Same Input Should Result in Same OutPut</li>
+      </ul>
+      <SyntaxComponent text={``}/>
     </div>
   );
 }

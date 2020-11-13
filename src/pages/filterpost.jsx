@@ -52,22 +52,24 @@ function FilterPost() {
       <Fade right>
         <div style={{ paddingTop: "300px" }}></div>
         <div id="section2"></div>
+        <div className="mycard">
         <h2>
-        <strong>Cascading filters, </strong>also known as hierarchical filters, funnel user
+        Cascading filters, also known as hierarchical filters, funnel user
         selection based on incremental selection. The first filter
         limits the second to only those values that remain relevant for the search criteria. It is
         vital for user experience, especially when dealing with a large
         dataset.
         </h2>
-        <h2 className='paragraph' style={{paddingTop: '100px'}}>However, at the time of this writing (October 2020) MUI Datatables do
+        <h2 >However, at the time of this writing (October 2020) MUI Datatables do
           not provide such built-in functionality. However, they provide
           everything necessary for the developer to build their own.</h2>
 
         <MDBSmoothScroll to="section3">
-          <MDBBtn rounded className="float-right" outline color="elegant">
+          <MDBBtn rounded className="float-right" outline color="white">
             <MDBIcon icon="arrow-down" />
           </MDBBtn>
         </MDBSmoothScroll>
+        </div>
 
         <div style={{ paddingTop: "300px" }}></div>
         <p>Here is an example of a basic table utilization:</p>
