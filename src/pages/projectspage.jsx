@@ -5,14 +5,14 @@ import { BreadcrumbsItem } from "react-breadcrumbs-dynamic";
 import { MDBCard } from "mdbreact";
 
 const ProjectsPage = () => (
-  <MDBCard style={{ paddingTop: '30px', paddingBottom: "100px" }}>
+  <div style={{ paddingTop: '30px', paddingBottom: "100px" }}>
     <BreadcrumbsItem glyph="user" to={"/projects"} eventKey={1.1}>
       Projects
     </BreadcrumbsItem>
     <div className="directory" style={{ paddingTop: "20px" }}>
       <ProjectsDirectory />
     </div>
-  </MDBCard>
+  </div>
 );
 
 export default ProjectsPage;

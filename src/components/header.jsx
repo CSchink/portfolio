@@ -52,7 +52,7 @@ class Header extends React.Component {
 
                   <MDBSmoothScroll to={this.props.section}>
                     <MDBBtn outline color="white">
-                      Read More
+                      Overview
                     </MDBBtn>
                   </MDBSmoothScroll>
 

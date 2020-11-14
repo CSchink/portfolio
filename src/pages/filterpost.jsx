@@ -13,6 +13,7 @@ function FilterPost() {
         title="Building a Cascading Filter"
         intro="Greg's MUI Datatables provide an excellent solution for developers requiring a sleek and responsive table design in their React project. One drawback is the lack of a cascading filter element. Join me on my quest to build one."
         src="https://i.pinimg.com/originals/e9/a8/5b/e9a85b5a3a7f83d86a85a4c348938bd5.png"
+        demo="nowhere"
       />
       <BreadcrumbsItem
         to={"/projects"}
